@@ -1,0 +1,43 @@
+.publications {
+	&_title {
+		margin-bottom: 6rem;
+
+		@media (max-width: 48em) {
+			margin-bottom: 6.4rem;
+		}
+	}
+	&_tabs {
+		.tabs-btns {
+			display: flex;
+			gap: 2rem;
+			align-items: center;
+			margin-bottom: 6rem;
+
+			@media (max-width: 48em) {
+				margin: 0 -4rem;
+				padding: 0 4rem;
+				width: calc(100% + 8rem);
+				gap: 1.6rem;
+				margin-bottom: 6.4rem;
+				overflow-y: auto;
+				-ms-overflow-style: none;
+				scrollbar-width: none;
+
+				&::-webkit-scrollbar {
+					display: none;
+				}
+			}
+		}
+	}
+
+	&_cards {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 6rem 2.75rem;
+
+		@media (max-width: 48em) {
+			grid-template-columns: 100%;
+			gap: 6.4rem;
+		}
+	}
+}

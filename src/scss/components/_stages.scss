@@ -1,0 +1,28 @@
+.stages {
+	&_title {
+		margin-bottom: 5rem;
+
+        @media (max-width: 48em) {
+            margin-bottom: 6.4rem;
+        }
+	}
+
+	&_cards {
+		display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2.8rem;
+
+        @media (max-width: 48em) {
+            grid-template-columns: 100%;
+            gap: 3.2rem;
+        }
+
+        .stage-card--big{
+            grid-area: auto / span 2;
+
+            @media (max-width: 48em) {
+                grid-area: unset;
+            }
+        }
+	}
+}

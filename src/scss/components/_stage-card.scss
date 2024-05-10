@@ -1,0 +1,122 @@
+.stage-card {
+	border-radius: 3.2rem;
+	background-color: #ffffff99;
+	border: 0.15rem solid #ffffff;
+	padding: 2.6rem 3.2rem 2.6rem 4.8rem;
+	width: 51.5rem;
+	// height: fit-content;
+	height: 100%;
+
+	@media (max-width: 48em) {
+		width: 100%;
+		border: none;
+		padding: 2.8rem;
+	}
+
+	&_top {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		margin-bottom: 4rem;
+	}
+
+	&_icon {
+		width: 8.8rem;
+		height: 8.8rem;
+		border-radius: 100%;
+		background-color: #d9d9d9;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		@media (max-width: 48em) {
+			width: 10.2rem;
+			height: 10.2rem;
+		}
+
+		svg {
+			width: 4rem;
+			height: 4rem;
+
+			@media (max-width: 48em) {
+				width: 4.8rem;
+				height: 4.8rem;
+			}
+		}
+
+		.svg-sm {
+			width: 3rem;
+			height: 3rem;
+
+			@media (max-width: 48em) {
+				width: 3.6rem;
+				height: 3.6rem;
+			}
+		}
+	}
+
+	&_num {
+		font-size: 2rem;
+		font-weight: 300;
+
+		@media (max-width: 48em) {
+			font-size: 3.2rem;
+		}
+	}
+
+	&_title {
+		font-weight: 600;
+		font-size: 2.4rem;
+
+		@media (max-width: 48em) {
+			font-size: 4.8rem;
+		}
+	}
+
+	&_desc {
+		width: 38.7rem;
+		margin-bottom: 4rem;
+
+		@media (max-width: 48em) {
+			width: 100%;
+		}
+	}
+
+	&--big {
+		width: 105.7rem;
+		position: relative;
+
+		@media (max-width: 48em) {
+			width: 100%;
+		}
+	}
+
+	&_img {
+		position: absolute;
+		top: 2.6rem;
+		right: 2.1rem;
+		width: 44.6rem;
+		height: 26.5rem;
+		mask-image: url('./../../assets/images/components/stage-card-mask.png');
+		-webkit-mask-image: url('./../../assets/images/components/stage-card-mask.png');
+		-webkit-mask-repeat: no-repeat;
+		mask-repeat: no-repeat;
+		mask-size: 100% 100%;
+	}
+
+	.btn__primary {
+		padding: 0.8rem 2rem;
+
+		@media (max-width: 48em) {
+			padding: 1.6rem 4rem;
+		}
+        
+		.btn__text {
+			font-size: 1.6rem;
+
+			@media (max-width: 48em) {
+				font-size: 3.2rem;
+			}
+		}
+	}
+}

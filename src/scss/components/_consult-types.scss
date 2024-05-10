@@ -1,0 +1,155 @@
+.consult-types {
+	.container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 5.7rem 13.3rem;
+
+		@media (max-width: 48em) {
+			grid-template-columns: 100%;
+			gap: unset;
+		}
+	}
+
+	&_title {
+		@media (max-width: 48em) {
+			margin-bottom: 3rem;
+		}
+	}
+
+	&_desc {
+		width: 50.9rem;
+		margin-left: 13.8rem;
+
+		@media (max-width: 48em) {
+			width: 100%;
+			margin-left: unset;
+			margin-bottom: 6.4rem;
+		}
+	}
+
+	&_img {
+		position: relative;
+		width: 51.5rem;
+		height: 29.1rem;
+		align-self: flex-end;
+
+		@media (max-width: 48em) {
+			width: 100%;
+			height: 46.1rem;
+			align-self: unset;
+			margin-bottom: 4rem;
+		}
+
+		.img-wrapper {
+			mask-image: url('./../../assets/images/pages/home/consult-types-mask.png');
+			-webkit-mask-image: url('./../../assets/images/pages/home/consult-types-mask.png');
+			-webkit-mask-repeat: no-repeat;
+			mask-repeat: no-repeat;
+			mask-size: 100% 100%;
+			width: 100%;
+			height: 100%;
+
+			@media (max-width: 48em) {
+				mask-image: url('./../../assets/images/pages/home/consult-types-mask-moconsult-types-mask-mob.png.png');
+				-webkit-mask-image: url('./../../assets/images/pages/home/consult-types-mask-mob.png');
+			}
+
+			img {
+				@media (max-width: 48em) {
+					object-position: 100% 55%;
+					transform: scale(1.3) translateX(-5rem);
+				}
+			}
+		}
+	}
+
+	&_tag {
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: #ffffff;
+		color: #1d1d1b;
+		font-size: 1.6rem;
+
+		@media (max-width: 48em) {
+			background-color: #1d1d1b;
+			color: #fff;
+			border: 0.2rem solid #1d1d1b;
+			padding: 2rem 5.286rem;
+			height: 6.8rem;
+		}
+	}
+
+	&_map {
+		position: relative;
+
+		@media (max-width: 48em) {
+			display: flex;
+			flex-direction: column-reverse;
+			gap: 6.4rem;
+		}
+	}
+
+	&_address {
+		position: absolute;
+		top: -8.2rem;
+		left: 13.9rem;
+		z-index: 10;
+		display: flex;
+		flex-direction: column;
+		gap: 0.8rem;
+		padding: 3.2rem 2.1rem;
+		border-radius: 2rem;
+		background-color: #e7e7e7b2;
+		border: 0.13rem solid #fff;
+		backdrop-filter: blur(8px);
+		box-shadow: 0 1.5rem 5rem 0 #7f7f7f33;
+
+		@media (max-width: 48em) {
+			position: relative;
+			top: unset;
+			left: unset;
+			border: none;
+			background-color: transparent;
+			box-shadow: none;
+			gap: 1rem;
+			margin-left: 14rem;
+			padding: unset;
+            z-index: 0;
+            backdrop-filter: none;
+		}
+
+		&::before {
+			@media (max-width: 48em) {
+				position: absolute;
+				content: '';
+				left: -10rem;
+				top: 1.8rem;
+				background-image: url('./../../assets/images/icons/map.svg');
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 100% 100%;
+				width: 6rem;
+				height: 6rem;
+			}
+		}
+
+		span {
+			font-size: 1.6rem;
+
+			@media (max-width: 48em) {
+				font-weight: 600;
+				font-size: 4rem;
+			}
+
+			&.title {
+				font-size: 4.4rem;
+
+				@media (max-width: 48em) {
+					font-size: 3.2rem;
+					font-weight: 300;
+				}
+			}
+		}
+	}
+}

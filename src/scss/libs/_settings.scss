@@ -1,0 +1,22 @@
+// Шрифты ==================================================
+$font: 'Panton-Trial'; // шрифт по умолчанию
+
+// Цвета ==================================================
+$bg: #f3f3f3;
+$fontColor: #1d1d1b; // цвет текста по умолчанию
+
+$black: #130f0b;
+$white: #fff;
+$orange: #d3965f;
+$lightGray: rgba(255, 255, 255, 0.5);
+$darkGray: #48413e;
+
+// Настройки ==============================================
+$sectionMargin: 16rem; // Отступ у секций
+$sectionMarginMobile: 20rem; // (x2) Отступ у секций на телефоне
+$mobileLayout: 375; // Размер мобильного макета
+$containerPadding: 4rem; // (x2) Отсутп контейнера на мобильной версии
+$containerPaddingMob: 4rem;
+$containerWidth: 160rem; // Ширина контейнера
+$mainPadding: 9rem; // отступ от fixed шапки
+$mainPaddingMobile: 18rem; // (x2) отступ от fixed шапки

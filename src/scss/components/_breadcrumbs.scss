@@ -1,0 +1,45 @@
+.breadcrumbs {
+	color: #898585;
+	position: relative;
+	margin-bottom: 4rem;
+	white-space: nowrap;
+	overflow-x: auto;
+	overflow-y: visible;
+	padding-bottom: 1.6rem;
+
+	@media (max-width: 48em) {
+		font-size: 3.2rem;
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+		margin: 0 -4rem 6.4rem;
+		padding: 0 4rem 2rem;
+		width: calc(100% + 8rem);
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 67.8rem;
+		height: 0.13rem;
+		background: linear-gradient(90deg, rgba(203, 199, 199, 1) 0%, rgba(203, 199, 199, 0) 100%);
+
+		@media (max-width: 48em) {
+			width: 66rem;
+			height: 0.26rem;
+			left: 4rem;
+		}
+	}
+
+	a {
+		font-weight: 300;
+		&.active {
+			color: #1d1d1b;
+		}
+	}
+}

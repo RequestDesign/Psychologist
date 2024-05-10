@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Публикации</title>
+	</head>
+	<body>
+		<include src="./components/header.html"></include>
+		<main>
+			<section class="publications">
+				<div class="container">
+					<div class="breadcrumbs">
+						<a href="#!">Главная</a>
+						<span class="montserrat">/</span>
+						<a href="#!" class="active">Публикации</a>
+					</div>
+					<div class="publications_content">
+						<div class="publications_title h1">Публикации</div>
+
+						<div class="publications_tabs tabs">
+							<div class="tabs-btns">
+								<button class="tab tab-btn active">Все</button>
+								<button class="tab tab-btn">Статьи</button>
+								<button class="tab tab-btn">Видео</button>
+								<button class="tab tab-btn">Публикации в СМИ</button>
+							</div>
+
+							<div class="tabs-container">
+								<div class="tabs-content active">
+									<div class="publications_cards">
+										<include src="./components/article_card.html"></include>
+										<include src="./components/article_card_video.html"></include>
+										<include src="./components/article_card.html"></include>
+										<include src="./components/article_card_video.html"></include>
+										<include src="./components/article_card.html"></include>
+										<include src="./components/article_card_video.html"></include>
+										<include src="./components/article_card.html"></include>
+										<include src="./components/article_card_video.html"></include>
+										<include src="./components/article_card.html"></include>
+										<include src="./components/article_card.html" data-text='{".article-card": {"class": "hidden"}}'></include>
+										<include src="./components/article_card.html" data-text='{".article-card": {"class": "hidden"}}'></include>
+										<include src="./components/article_card.html" data-text='{".article-card": {"class": "hidden"}}'></include>
+									</div>
+									<button class="btn btn__secondary btn__show-more">
+										<span class="btn__text">Показать еще</span>
+										<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M7.08984 19L11.7438 12.5L7.08984 6H8.30984L12.9638 12.5L8.30984 19H7.08984ZM12.8868 19L17.5398 12.5L12.8868 6H14.1058L18.7598 12.5L14.1058 19H12.8868Z" fill="#1D1D1B"/>
+											</svg>
+											
+									</button>
+								</div>
+								<div class="tabs-content">
+									<div class="publications_cards">
+										<include src="./components/article_card.html"></include>
+										<include src="./components/article_card.html"></include>
+										<include src="./components/article_card.html"></include>
+										<include src="./components/article_card.html"></include>
+									</div>
+								</div>
+								<div class="tabs-content">
+									<div class="publications_cards">
+										<include src="./components/article_card.html"></include>
+										<include src="./components/article_card.html"></include>
+										<include src="./components/article_card.html"></include>
+									</div>
+								</div>
+								<div class="tabs-content">
+									<div class="publications_cards">
+										<include src="./components/article_card.html"></include>
+										<include src="./components/article_card.html"></include>
+										<include src="./components/article_card.html"></include>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<include src="./components/request.html"></include>
+		</main>
+		<include src="./components/footer.html"></include>
+		<include src="./components/modal.html"></include>
+	</body>
+</html>

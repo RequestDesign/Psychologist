@@ -1,0 +1,177 @@
+.request {
+	&_content {
+		position: relative;
+	}
+
+	&_title {
+		margin-bottom: 8rem;
+		width: 73.8rem;
+
+		@media (max-width: 48em) {
+			margin-bottom: 9.6rem;
+			width: 100%;
+		}
+	}
+
+	&__info {
+		position: absolute;
+		top: 25.4rem;
+		left: 0;
+		font-weight: 300;
+		font-size: 2rem;
+
+		@media (max-width: 48em) {
+			top: 24rem;
+			font-size: 3.2rem;
+			width: 31.6rem;
+		}
+
+		&-gr {
+			position: absolute;
+			right: 4rem;
+			top: 2.8rem;
+			color: #cbc7c7;
+			text-transform: uppercase;
+			font-size: 1.6rem;
+		}
+	}
+
+	&_form {
+		position: relative;
+		background-color: #fff;
+		mask-image: url('./../../assets/images/components/request-mask.png');
+		mask-size: 100% 100%;
+		padding: 11.9rem 4rem 6rem;
+
+		@media (max-width: 48em) {
+			mask-image: url('./../../assets/images/components/request-mask-mobile.png');
+			margin: 0 -4rem;
+			width: calc(100% + 8rem);
+			padding: 15.2rem 4rem 5.2rem;
+		}
+
+		&__inputs {
+			display: flex;
+			flex-direction: column;
+			gap: 3.2rem;
+			margin-bottom: 6rem;
+
+			@media (max-width: 48em) {
+				gap: 6.4rem;
+				margin-bottom: 6.4rem;
+			}
+
+			&_row {
+				display: flex;
+				gap: 2rem;
+
+				@media (max-width: 48em) {
+					flex-direction: column;
+					gap: 4rem;
+				}
+
+				&:last-child {
+					margin-top: 2.4rem;
+
+					@media (max-width: 48em) {
+						margin-top: unset;
+					}
+				}
+			}
+
+			span {
+				font-size: 4.4rem;
+				line-height: 1;
+
+				@media (max-width: 48em) {
+					font-size: 5rem;
+				}
+			}
+
+			.input-wrapper {
+				position: relative;
+				min-height: 5.2rem;
+				height: fit-content;
+				border-bottom: 0.1rem solid #cbc7c7;
+
+				@media (max-width: 48em) {
+					min-height: 6rem;
+					border-bottom: 0.26rem solid #cbc7c7;
+				}
+
+				&--name {
+					width: 46rem;
+
+					@media (max-width: 48em) {
+						width: 100%;
+					}
+				}
+
+				&--text {
+					flex: 1;
+				}
+
+				&--tel {
+					flex: 1;
+				}
+
+				input,
+				textarea {
+					width: 100%;
+					height: 100%;
+					padding: 2rem 0.8rem 0.7rem;
+
+					@media (max-width: 48em) {
+						padding: 0rem 0rem 2rem;
+					}
+				}
+
+				textarea {
+					max-height: 9.2rem;
+
+					@media (max-width: 48em) {
+						max-height: 17rem;
+						height: 4.8rem;
+						padding-bottom: 1rem;
+					}
+				}
+
+				.placeholder {
+					position: absolute;
+					bottom: 0.8rem;
+					left: 50%;
+					transform: translateX(-50%);
+					font-size: 2rem;
+					font-weight: 300;
+					pointer-events: none;
+					transition: opacity 0.2s;
+
+					@media (max-width: 48em) {
+						bottom: 2rem;
+						left: 0;
+						transform: none;
+						font-size: 3.2rem;
+					}
+
+					span {
+						font-size: 2rem;
+						line-height: 1.2;
+						color: #cbc7c7;
+					}
+				}
+			}
+		}
+	}
+
+	.btn__primary {
+		@media (max-width: 48em) {
+			width: 100%;
+			padding: 3.4rem 5rem;
+			gap: 2rem;
+
+			.btn__text {
+				font-size: 3.6rem;
+			}
+		}
+	}
+}

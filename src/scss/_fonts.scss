@@ -1,0 +1,37 @@
+@font-face {
+	font-family: 'Panton-Trial';
+	src: url('../assets/fonts/panton_regular.woff');
+	src: local('Panton-Trial'), local('Panton-Trial-Regular'), url('../assets/fonts/panton_regular.woff2') format('woff2'), url('../assets/fonts/panton_regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Panton-Trial';
+	src: url('../assets/fonts/panton_light.woff');
+	src: local('Panton-Trial Light'), local('Panton-Trial-Light'), url('../assets/fonts/panton_light.woff2') format('woff2'), url('../assets/fonts/panton_light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Panton-Trial';
+	src: url('../assets/fonts/Panton-Trial-SemiBold.eot');
+	src: local('Panton-Trial SemiBold'), local('Panton-Trial-SemiBold'), url('../assets/fonts/Panton-Trial-SemiBold.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/Panton-Trial-SemiBold.woff2') format('woff2'), url('../assets/fonts/Panton-Trial-SemiBold.woff') format('woff'), url('../assets/fonts/Panton-Trial-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Panton-Trial';
+	src: url('../assets/fonts/Panton-Trial-Bold.eot');
+	src: local('Panton-Trial Bold'), local('Panton-Trial-Bold'), url('../assets/fonts/Panton-Trial-Bold.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/Panton-Trial-Bold.woff2') format('woff2'), url('../assets/fonts/Panton-Trial-Bold.woff') format('woff'), url('../assets/fonts/Panton-Trial-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:200,300,regular,500,600,700);

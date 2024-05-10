@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+		<title>Когнитивный психолог</title>
+	</head>
+
+	<body>
+		<include src="./components/header.html"></include>
+
+		<h4 style="font-size: 6rem; width: 100%; text-align: center; margin-top: 20rem">Страницы</h4>
+		<ul style="padding: 5rem; margin-top: 5rem; display: flex; flex-direction: column; gap: 4rem">
+			<li><a style="font-size: 5rem;" href="./home.html">Главная</a></li>
+			<li><a style="font-size: 5rem" href="./services_detail.html">Услуги детально</a></li>
+			<li><a style="font-size: 5rem" href="./contacts.html">Контакты</a></li>
+			<li><a style="font-size: 5rem" href="./publications.html">Публикации</a></li>
+			<li><a style="font-size: 5rem" href="./publications_detail.html">Публикации детальная</a></li>
+			<li><a style="font-size: 5rem" href="./services.html">Услуги общая</a></li>
+			<li data-modal="request">Модалка "запишитесь на консультацию"</li>
+			<li data-modal="success">Модалка "спасибо за заявку"</li>
+		</ul>
+
+		<div style="display: flex; gap: 4rem; flex-wrap: wrap; align-items: center">
+			<h4 style="font-size: 6rem; width: 100%; text-align: center; margin-bottom: 5rem">Ui kit</h4>
+			<include src="./components/ui/btn_primary.html"></include>
+			<include src="./components/ui/btn_secondary.html"></include>
+			<include src="./components/ui/btn_play.html"></include>
+		</div>
+		<include src="./components/modal.html"></include>
+		<include src="./components/footer.html"></include>
+	</body>
+</html>

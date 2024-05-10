@@ -1,0 +1,17 @@
+.similar {
+	&_title {
+		margin-bottom: 4.8rem;
+
+		@media (max-width: 48em) {
+			margin-bottom: 6.4rem;
+		}
+	}
+
+	&_items {
+		@media (max-width: 48em) {
+			margin: 0 -4rem;
+			padding: 0 4rem;
+			width: calc(100% + 8rem);
+		}
+	}
+}

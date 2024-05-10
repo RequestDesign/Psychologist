@@ -1,0 +1,106 @@
+.symptoms {
+	.container {
+		display: flex;
+		gap: 9.6rem;
+
+		@media (max-width: 48em) {
+			flex-direction: column;
+			gap: 6.4rem;
+		}
+	}
+
+	&_title {
+		margin-bottom: 8.9rem;
+
+		@media (max-width: 48em) {
+			margin-bottom: 6.4rem;
+		}
+	}
+
+	&_list {
+		display: flex;
+		flex-direction: column;
+		gap: 5rem;
+
+		@media (max-width: 48em) {
+			gap: 4rem;
+		}
+
+		li {
+			position: relative;
+			padding-left: 3.8rem;
+
+			@media (max-width: 48em) {
+				padding-left: 4rem;
+			}
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 0;
+				transform: translateY(-50%);
+				border-radius: 100%;
+				width: 1.6rem;
+				height: 1.6rem;
+				background-color: #1d1d1b;
+			}
+		}
+	}
+
+	&_img {
+		width: 78.9rem;
+		height: 45.2rem;
+		border-radius: 3.2rem;
+		overflow: hidden;
+		margin-bottom: 3.2rem;
+
+		@media (max-width: 48em) {
+			width: 100%;
+			height: 38.2rem;
+			border-radius: 4rem;
+			margin-bottom: 0;
+		}
+	}
+
+	&_ps {
+		mask-image: url('./../../assets/images/components/symptoms-ps-mask.png');
+		-webkit-mask-image: url('./../../assets/images/components/symptoms-ps-mask.png');
+		-webkit-mask-repeat: no-repeat;
+		mask-repeat: no-repeat;
+		mask-size: 100% 100%;
+		background-color: #1d1d1b;
+		padding: 4.1rem 3.1rem 4.6rem 2.3rem;
+		width: 78.3rem;
+		height: 16.4rem;
+		display: flex;
+		gap: 2rem;
+		color: #ffffff;
+
+		&__icon {
+			width: 6rem;
+			height: 6rem;
+			border-radius: 100%;
+			background-color: #fff;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			svg {
+				width: 3rem;
+				height: 3rem;
+			}
+		}
+
+		&__text {
+			display: flex;
+			flex-direction: column;
+			gap: 1.5rem;
+		}
+
+		&__title {
+			font-weight: 600;
+			font-size: 3.2rem;
+		}
+	}
+}

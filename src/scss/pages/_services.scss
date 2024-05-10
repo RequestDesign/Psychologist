@@ -1,0 +1,36 @@
+.services {
+	&_top {
+		@media (max-width: 48em) {
+            margin-bottom: 6.4rem;
+        }
+	}
+
+	&_block {
+		&__title {
+			margin-bottom: 6rem;
+
+			@media (max-width: 48em) {
+				margin-bottom: 4rem;
+			}
+		}
+
+		&__items {
+			.swiper-wrapper {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				gap: 2.8rem;
+
+				@media (max-width: 48em) {
+					display: flex;
+					gap: unset;
+				}
+			}
+
+			@media (max-width: 48em) {
+				margin: 0 -4rem;
+				padding: 0 4rem;
+				width: calc(100% + 8rem);
+			}
+		}
+	}
+}

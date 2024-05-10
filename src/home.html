@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+		<title>Главная</title>
+		<script src="https://api-maps.yandex.ru/2.1/?apikey=972ad756-2959-4091-a045-f5978143f734&lang=ru_RU"></script>
+	</head>
+	<body>
+		<include src="./components/header.html"></include>
+		<main>
+			<section class="banner">
+				<div class="container">
+					<div class="banner_text banner_text-top">
+						<div class="breadcrumbs">
+							<a href="#!" class="active">Когнитивно-поведенческая терапия</a>
+						</div>
+						<h1 class="banner_text-title h1">Алина Гарибова. психолог - консультант</h1>
+					</div>
+
+					<div class="banner_text banner_text-bottom">
+						<span class="banner_text-desc">Предлагаю консультации по широкому спектру вопросов, включая стресс, тревожность, депрессию, отношения, самооценку и личностный рост.</span>
+						<div class="banner_btns">
+							<button class="btn btn__primary" data-modal="request">
+								<span class="btn__text">Запись на консультацию</span>
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12.885 18.5L17.538 12L12.885 5.5H14.104L18.758 12L14.104 18.5H12.885Z" fill="white" />
+									<path d="M7.08789 18.5L11.7419 12L7.08789 5.5H8.30789L12.9619 12L8.30789 18.5H7.08789Z" fill="white" />
+								</svg>
+							</button>
+							<button class="btn btn__secondary">
+								<span class="btn__text">Подробнее</span>
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12 11.8334L12 14.75" stroke="#1D1D1B" stroke-linecap="round" />
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M13.1667 19.2837C13.1667 19.5207 13.3801 19.7015 13.6108 19.6472C16.7003 18.9196 19 16.145 19 12.8334L19 7.00005C19 3.13406 15.866 4.93171e-05 12 4.89791e-05C8.13401 4.86411e-05 5 3.13406 5 7.00005L5 12.8334C5 16.145 7.29968 18.9196 10.3892 19.6472C10.6199 19.7015 10.8333 19.5207 10.8333 19.2837C10.8333 19.0996 10.7018 18.9427 10.5228 18.8992C7.78862 18.2357 5.75834 15.7716 5.75834 12.8334L5.75834 7.00005C5.75834 3.55287 8.55283 0.758382 12 0.758382C15.4472 0.758382 18.2417 3.55287 18.2417 7.00005L18.2417 12.8334C18.2417 15.7716 16.2114 18.2357 13.4772 18.8992C13.2982 18.9427 13.1667 19.0996 13.1667 19.2837Z"
+										fill="#1D1D1B"
+									/>
+									<path d="M3 15V15C3 19.4183 6.58172 23 11 23L13 23C17.4183 23 21 19.4183 21 15V15" stroke="#1D1D1B" stroke-width="0.758333" stroke-linecap="round" />
+								</svg>
+							</button>
+						</div>
+						<div class="banner_consult desktop">
+							<div class="banner_consult-img">
+								<img src="./assets/images/pages/home/consult.png" alt="" />
+							</div>
+							<div class="banner_consult-text">
+								<div class="banner_consult-title">Как проходит консультация</div>
+								<span class="banner_consult-desc"> Для вашего удобства я провожу как удаленные консультации, так и личные встречи. </span>
+							</div>
+							<a href="#!" class="banner_consult-link">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M7.08789 18.5L11.7419 12L7.08789 5.5H8.30789L12.9619 12L8.30789 18.5H7.08789ZM12.8849 18.5L17.5379 12L12.8849 5.5H14.1039L18.7579 12L14.1039 18.5H12.8849Z" fill="white" />
+								</svg>
+							</a>
+						</div>
+					</div>
+
+					<div class="banner_right">
+						<div class="banner_right-img">
+							<img src="./assets/images/pages/home/photo_2.jpg" alt="" />
+						</div>
+
+						<div class="banner_info desktop">
+							<div class="banner_info-placemark">
+								<img src="./assets/images/pages/home/mark.svg" alt="" />
+							</div>
+							<a href="" class="banner_info-link">Подробнее</a>
+							<span class="banner_info-mark">Образование</span>
+							<div class="banner_info-text">
+								<span class="banner_info-category">дипломы </span>
+								<span class="banner_info-desc">Будьте уверены в моем профессионализме!</span>
+							</div>
+						</div>
+
+						<a href="#!" class="banner_info mobile">
+							<span>дипломы</span>
+							<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M13.3867 18.5L18.0397 12L13.3867 5.5H14.6057L19.2597 12L14.6057 18.5H13.3867Z" fill="#1D1D1B"/>
+								<path d="M7.58594 18.5L12.2399 12L7.58594 5.5H8.80594L13.4599 12L8.80594 18.5H7.58594Z" fill="#1D1D1B"/>
+							</svg>								
+						</a>
+
+						<div class="banner_bottom">
+							<div class="banner_help desktop">
+								<div class="banner_help-img">
+									<img src="./assets/images/pages/home/help.png" alt="" />
+								</div>
+								<a href="" class="banner_help-link">
+									<img src="./assets/images/icons/arrow.svg" alt="" />
+								</a>
+								<div class="banner_help-title">Чем я могу помочь?</div>
+							</div>
+
+							<div class="banner_symptoms">
+								<span class="tag">Отношения</span>
+								<span class="tag">Тревожность</span>
+								<span class="tag">Депрессия</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="about">
+				<div class="container">
+					<h2 class="about__title h1">Обо мне</h2>
+					<span class="about__desc desktop"><b>"</b>Профессиональный рост в психологии подобен непрерывному путешествию в мир человеческой души, где каждое новое открытие становится ключом к пониманию глубин человеческого существования.<b>"</b></span>
+					<div class="about__main">
+						<ul class="about__info">
+							<li class="about__info-text">Психолог, немедицинский психотерапевт, действительный член Профессиональной Психотерапевтической Лиги.</li>
+							<li class="about__info-text">Являюсь ко-терапевтом профессора Макарова Виктора Викторовича.</li>
+							<li class="about__info-text">С 2019 года занимаюсь методом саморегуляции, релаксации и психотерапевтической медитации «Океан».</li>
+						</ul>
+						<div class="about__photos">
+							<div class="about__photos-img desktop">
+								<img src="./assets/images/pages/home/photo_1.jpg" alt="" />
+							</div>
+							<div class="about__photos-img">
+								<img src="./assets/images/pages/home/photo_2.jpg" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="work">
+				<div class="container">
+					<div class="work_left">
+						<div class="work_title">
+							<div class="work_title-text h1">С чем я работаю как психолог?</div>
+							<button class="btn btn__primary desktop" data-modal="request">
+								<span class="btn__text">Запись на консультацию</span>
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12.885 18.5L17.538 12L12.885 5.5H14.104L18.758 12L14.104 18.5H12.885Z" fill="white" />
+									<path d="M7.08789 18.5L11.7419 12L7.08789 5.5H8.30789L12.9619 12L8.30789 18.5H7.08789Z" fill="white" />
+								</svg>
+							</button>
+						</div>
+						<div class="work_bottom">
+							<div class="work_bottom__img">
+								<img src="./assets/images/pages/home/work_1.jpg" alt="" />
+							</div>
+							<div class="work_bottom__deco">
+								<img src="./assets/images/icons/head.svg" alt="" />
+							</div>
+							<span class="work_bottom__text desktop">Я занимаюсь помощью людям в решении широкого спектра психологических проблем</span>
+						</div>
+					</div>
+					<ul class="work_main">
+						<li class="work_main-item">
+							<div class="work_main-item__top">
+								<div class="work_main-item__icon desktop">
+									<img src="./assets/images/icons/cloud.svg" alt="" />
+								</div>
+								<a href="#!" class="work_main-item__title">Депрессии, тревожность, стресс</a>
+								<div class="work_main-item__btn">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M18.5 16.912L12 12.258L5.5 16.912V15.692L12 11.038L18.5 15.692V16.912ZM18.5 11.115L12 6.46199L5.5 11.115V9.89599L12 5.24199L18.5 9.89599V11.115Z" fill="#1D1D1B" />
+									</svg>
+								</div>
+							</div>
+							<div class="work_main-item__text">Поддержу вас в периоды печали и безысходности, помогу найти путь к излечению и восстановлению эмоционального равновесия.</div>
+						</li>
+
+						<li class="work_main-item">
+							<div class="work_main-item__top">
+								<div class="work_main-item__icon desktop">
+									<img src="./assets/images/icons/user.svg" alt="" />
+								</div>
+								<a href="#!" class="work_main-item__title">Проблемы воспитания детей дошкольного возраста</a>
+								<div class="work_main-item__btn">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M18.5 16.912L12 12.258L5.5 16.912V15.692L12 11.038L18.5 15.692V16.912ZM18.5 11.115L12 6.46199L5.5 11.115V9.89599L12 5.24199L18.5 9.89599V11.115Z" fill="#1D1D1B" />
+									</svg>
+								</div>
+							</div>
+							<div class="work_main-item__text">Поддержу вас в периоды печали и безысходности, помогу найти путь к излечению и восстановлению эмоционального равновесия.</div>
+						</li>
+
+						<li class="work_main-item">
+							<div class="work_main-item__top">
+								<div class="work_main-item__icon desktop">
+									<img src="./assets/images/icons/flag.svg" alt="" />
+								</div>
+								<a href="#!" class="work_main-item__title">Поиск профессионального пути</a>
+								<div class="work_main-item__btn">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M18.5 16.912L12 12.258L5.5 16.912V15.692L12 11.038L18.5 15.692V16.912ZM18.5 11.115L12 6.46199L5.5 11.115V9.89599L12 5.24199L18.5 9.89599V11.115Z" fill="#1D1D1B" />
+									</svg>
+								</div>
+							</div>
+							<div class="work_main-item__text">Поддержу вас в периоды печали и безысходности, помогу найти путь к излечению и восстановлению эмоционального равновесия.</div>
+						</li>
+
+						<li class="work_main-item">
+							<div class="work_main-item__top">
+								<div class="work_main-item__icon desktop">
+									<img src="./assets/images/icons/heartbreak.svg" alt="" />
+								</div>
+								<a href="#!" class="work_main-item__title">Психологические травмы, утраты и горе</a>
+								<div class="work_main-item__btn">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M18.5 16.912L12 12.258L5.5 16.912V15.692L12 11.038L18.5 15.692V16.912ZM18.5 11.115L12 6.46199L5.5 11.115V9.89599L12 5.24199L18.5 9.89599V11.115Z" fill="#1D1D1B" />
+									</svg>
+								</div>
+							</div>
+							<div class="work_main-item__text">Поддержу вас в периоды печали и безысходности, помогу найти путь к излечению и восстановлению эмоционального равновесия.</div>
+						</li>
+
+						<li class="work_main-item">
+							<div class="work_main-item__top">
+								<div class="work_main-item__icon desktop">
+									<img src="./assets/images/icons/peer_to_peer.svg" alt="" />
+								</div>
+								<a href="#!" class="work_main-item__title">Проблемы во взаимоотношениях, параллельные отношения</a>
+								<div class="work_main-item__btn">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M18.5 16.912L12 12.258L5.5 16.912V15.692L12 11.038L18.5 15.692V16.912ZM18.5 11.115L12 6.46199L5.5 11.115V9.89599L12 5.24199L18.5 9.89599V11.115Z" fill="#1D1D1B" />
+									</svg>
+								</div>
+							</div>
+							<div class="work_main-item__text">Поддержу вас в периоды печали и безысходности, помогу найти путь к излечению и восстановлению эмоционального равновесия.</div>
+						</li>
+
+						<li class="work_main-item">
+							<div class="work_main-item__top">
+								<div class="work_main-item__icon desktop">
+									<img src="./assets/images/icons/approximately.svg" alt="" />
+								</div>
+								<a href="#!" class="work_main-item__title">Снятие психологического напряжения методом саморегуляции и релаксации “Океан”</a>
+								<div class="work_main-item__btn">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M18.5 16.912L12 12.258L5.5 16.912V15.692L12 11.038L18.5 15.692V16.912ZM18.5 11.115L12 6.46199L5.5 11.115V9.89599L12 5.24199L18.5 9.89599V11.115Z" fill="#1D1D1B" />
+									</svg>
+								</div>
+							</div>
+							<div class="work_main-item__text">Поддержу вас в периоды печали и безысходности, помогу найти путь к излечению и восстановлению эмоционального равновесия.</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="education">
+				<div class="container">
+					<div class="education_top">
+						<div class="education_title">
+							<div class="h1">Мое образование</div>
+							<div class="education_subtitle">Изучение психологии: мой путь к пониманию себя и других</div>
+						</div>
+
+						<div class="education_swiper-pag desktop">
+							<div class="pagination">
+								<div class="pagination__num pag-cur">01</div>
+								<svg width="17" height="2" viewBox="0 0 17 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.208 1.90351C1.096 1.90351 1.016 1.87951 0.968 1.83151C0.92 1.78351 0.896 1.70351 0.896 1.59151V1.18351C0.896 1.07151 0.92 0.999511 0.968 0.967511C1.016 0.919512 1.096 0.895512 1.208 0.895512H16.256C16.368 0.895512 16.44 0.919512 16.472 0.967511C16.52 0.999511 16.544 1.07151 16.544 1.18351V1.59151C16.544 1.70351 16.52 1.78351 16.472 1.83151C16.44 1.87951 16.368 1.90351 16.256 1.90351H1.208Z" fill="#CBC7C7" />
+								</svg>
+
+								<div class="pagination__num pag-last">02</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="education_swiper swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="#!" class="education-card" data-fancybox="education-gallery" data-src="./assets/images/pages/home/education_1.jpg">
+									<div class="education-card__img">
+										<img src="./assets/images/pages/home/education_1.jpg" alt="" />
+									</div>
+									<div class="education-card__btn desktop">
+										<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M18.9333 16.5996H12.2666C11.7199 16.5996 11.2666 16.1463 11.2666 15.5996C11.2666 15.0529 11.7199 14.5996 12.2666 14.5996H18.9333C19.4799 14.5996 19.9333 15.0529 19.9333 15.5996C19.9333 16.1463 19.4799 16.5996 18.9333 16.5996Z" fill="white" />
+											<path d="M15.6001 19.9328C15.0534 19.9328 14.6001 19.4794 14.6001 18.9328V12.2661C14.6001 11.7194 15.0534 11.2661 15.6001 11.2661C16.1468 11.2661 16.6001 11.7194 16.6001 12.2661V18.9328C16.6001 19.4794 16.1468 19.9328 15.6001 19.9328Z" fill="white" />
+											<path d="M15.3334 28.9996C7.80008 28.9996 1.66675 22.8663 1.66675 15.3329C1.66675 7.79959 7.80008 1.66626 15.3334 1.66626C22.8667 1.66626 29.0001 7.79959 29.0001 15.3329C29.0001 22.8663 22.8667 28.9996 15.3334 28.9996ZM15.3334 3.66626C8.89341 3.66626 3.66675 8.90626 3.66675 15.3329C3.66675 21.7596 8.89341 26.9996 15.3334 26.9996C21.7734 26.9996 27.0001 21.7596 27.0001 15.3329C27.0001 8.90626 21.7734 3.66626 15.3334 3.66626Z" fill="white" />
+											<path d="M29.3333 30.3328C29.0799 30.3328 28.8266 30.2394 28.6266 30.0394L25.9599 27.3728C25.5733 26.9861 25.5733 26.3461 25.9599 25.9594C26.3466 25.5728 26.9866 25.5728 27.3733 25.9594L30.0399 28.6261C30.4266 29.0128 30.4266 29.6528 30.0399 30.0394C29.8399 30.2394 29.5866 30.3328 29.3333 30.3328Z" fill="white" />
+										</svg>
+									</div>
+
+									<div class="education-card__title">Диплом о психологическом образовании</div>
+									<div class="education-card__desc">Удостоверяет право на ведение профессиональной деятельности в сере практической психологии.</div>
+								</a>
+							</div>
+
+							<div class="swiper-slide">
+								<a href="#!" class="education-card" data-fancybox="education-gallery" data-src="./assets/images/pages/home/education_2.jpg">
+									<div class="education-card__img">
+										<img src="./assets/images/pages/home/education_2.jpg" alt="" />
+									</div>
+									<div class="education-card__btn desktop">
+										<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M18.9333 16.5996H12.2666C11.7199 16.5996 11.2666 16.1463 11.2666 15.5996C11.2666 15.0529 11.7199 14.5996 12.2666 14.5996H18.9333C19.4799 14.5996 19.9333 15.0529 19.9333 15.5996C19.9333 16.1463 19.4799 16.5996 18.9333 16.5996Z" fill="white" />
+											<path d="M15.6001 19.9328C15.0534 19.9328 14.6001 19.4794 14.6001 18.9328V12.2661C14.6001 11.7194 15.0534 11.2661 15.6001 11.2661C16.1468 11.2661 16.6001 11.7194 16.6001 12.2661V18.9328C16.6001 19.4794 16.1468 19.9328 15.6001 19.9328Z" fill="white" />
+											<path d="M15.3334 28.9996C7.80008 28.9996 1.66675 22.8663 1.66675 15.3329C1.66675 7.79959 7.80008 1.66626 15.3334 1.66626C22.8667 1.66626 29.0001 7.79959 29.0001 15.3329C29.0001 22.8663 22.8667 28.9996 15.3334 28.9996ZM15.3334 3.66626C8.89341 3.66626 3.66675 8.90626 3.66675 15.3329C3.66675 21.7596 8.89341 26.9996 15.3334 26.9996C21.7734 26.9996 27.0001 21.7596 27.0001 15.3329C27.0001 8.90626 21.7734 3.66626 15.3334 3.66626Z" fill="white" />
+											<path d="M29.3333 30.3328C29.0799 30.3328 28.8266 30.2394 28.6266 30.0394L25.9599 27.3728C25.5733 26.9861 25.5733 26.3461 25.9599 25.9594C26.3466 25.5728 26.9866 25.5728 27.3733 25.9594L30.0399 28.6261C30.4266 29.0128 30.4266 29.6528 30.0399 30.0394C29.8399 30.2394 29.5866 30.3328 29.3333 30.3328Z" fill="white" />
+										</svg>
+									</div>
+
+									<div class="education-card__title">Удостоверение о повышении квалификации</div>
+									<div class="education-card__desc">Московский институт психоанализа, г. Москва.</div>
+								</a>
+							</div>
+
+							<div class="swiper-slide">
+								<a href="#!" class="education-card" data-fancybox="education-gallery" data-src="./assets/images/pages/home/education_3.jpg">
+									<div class="education-card__img">
+										<img src="./assets/images/pages/home/education_3.jpg" alt="" />
+									</div>
+									<div class="education-card__btn desktop">
+										<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M18.9333 16.5996H12.2666C11.7199 16.5996 11.2666 16.1463 11.2666 15.5996C11.2666 15.0529 11.7199 14.5996 12.2666 14.5996H18.9333C19.4799 14.5996 19.9333 15.0529 19.9333 15.5996C19.9333 16.1463 19.4799 16.5996 18.9333 16.5996Z" fill="white" />
+											<path d="M15.6001 19.9328C15.0534 19.9328 14.6001 19.4794 14.6001 18.9328V12.2661C14.6001 11.7194 15.0534 11.2661 15.6001 11.2661C16.1468 11.2661 16.6001 11.7194 16.6001 12.2661V18.9328C16.6001 19.4794 16.1468 19.9328 15.6001 19.9328Z" fill="white" />
+											<path d="M15.3334 28.9996C7.80008 28.9996 1.66675 22.8663 1.66675 15.3329C1.66675 7.79959 7.80008 1.66626 15.3334 1.66626C22.8667 1.66626 29.0001 7.79959 29.0001 15.3329C29.0001 22.8663 22.8667 28.9996 15.3334 28.9996ZM15.3334 3.66626C8.89341 3.66626 3.66675 8.90626 3.66675 15.3329C3.66675 21.7596 8.89341 26.9996 15.3334 26.9996C21.7734 26.9996 27.0001 21.7596 27.0001 15.3329C27.0001 8.90626 21.7734 3.66626 15.3334 3.66626Z" fill="white" />
+											<path d="M29.3333 30.3328C29.0799 30.3328 28.8266 30.2394 28.6266 30.0394L25.9599 27.3728C25.5733 26.9861 25.5733 26.3461 25.9599 25.9594C26.3466 25.5728 26.9866 25.5728 27.3733 25.9594L30.0399 28.6261C30.4266 29.0128 30.4266 29.6528 30.0399 30.0394C29.8399 30.2394 29.5866 30.3328 29.3333 30.3328Z" fill="white" />
+										</svg>
+									</div>
+
+									<div class="education-card__title">Сертификат</div>
+									<div class="education-card__desc">Московский институт гештальта и психодрамы</div>
+								</a>
+							</div>
+
+							<div class="swiper-slide">
+								<a href="#!" class="education-card" data-fancybox="education-gallery" data-src="./assets/images/pages/home/education_1.jpg">
+									<div class="education-card__img">
+										<img src="./assets/images/pages/home/education_1.jpg" alt="" />
+									</div>
+									<div class="education-card__btn desktop">
+										<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M18.9333 16.5996H12.2666C11.7199 16.5996 11.2666 16.1463 11.2666 15.5996C11.2666 15.0529 11.7199 14.5996 12.2666 14.5996H18.9333C19.4799 14.5996 19.9333 15.0529 19.9333 15.5996C19.9333 16.1463 19.4799 16.5996 18.9333 16.5996Z" fill="white" />
+											<path d="M15.6001 19.9328C15.0534 19.9328 14.6001 19.4794 14.6001 18.9328V12.2661C14.6001 11.7194 15.0534 11.2661 15.6001 11.2661C16.1468 11.2661 16.6001 11.7194 16.6001 12.2661V18.9328C16.6001 19.4794 16.1468 19.9328 15.6001 19.9328Z" fill="white" />
+											<path d="M15.3334 28.9996C7.80008 28.9996 1.66675 22.8663 1.66675 15.3329C1.66675 7.79959 7.80008 1.66626 15.3334 1.66626C22.8667 1.66626 29.0001 7.79959 29.0001 15.3329C29.0001 22.8663 22.8667 28.9996 15.3334 28.9996ZM15.3334 3.66626C8.89341 3.66626 3.66675 8.90626 3.66675 15.3329C3.66675 21.7596 8.89341 26.9996 15.3334 26.9996C21.7734 26.9996 27.0001 21.7596 27.0001 15.3329C27.0001 8.90626 21.7734 3.66626 15.3334 3.66626Z" fill="white" />
+											<path d="M29.3333 30.3328C29.0799 30.3328 28.8266 30.2394 28.6266 30.0394L25.9599 27.3728C25.5733 26.9861 25.5733 26.3461 25.9599 25.9594C26.3466 25.5728 26.9866 25.5728 27.3733 25.9594L30.0399 28.6261C30.4266 29.0128 30.4266 29.6528 30.0399 30.0394C29.8399 30.2394 29.5866 30.3328 29.3333 30.3328Z" fill="white" />
+										</svg>
+									</div>
+
+									<div class="education-card__title">Диплом о психологическом образовании</div>
+									<div class="education-card__desc">Удостоверяет право на ведение профессиональной деятельности в сере практической психологии.</div>
+								</a>
+							</div>
+
+							<div class="swiper-slide">
+								<a href="#!" class="education-card" data-fancybox="education-gallery" data-src="./assets/images/pages/home/education_2.jpg">
+									<div class="education-card__img">
+										<img src="./assets/images/pages/home/education_2.jpg" alt="" />
+									</div>
+									<div class="education-card__btn desktop">
+										<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M18.9333 16.5996H12.2666C11.7199 16.5996 11.2666 16.1463 11.2666 15.5996C11.2666 15.0529 11.7199 14.5996 12.2666 14.5996H18.9333C19.4799 14.5996 19.9333 15.0529 19.9333 15.5996C19.9333 16.1463 19.4799 16.5996 18.9333 16.5996Z" fill="white" />
+											<path d="M15.6001 19.9328C15.0534 19.9328 14.6001 19.4794 14.6001 18.9328V12.2661C14.6001 11.7194 15.0534 11.2661 15.6001 11.2661C16.1468 11.2661 16.6001 11.7194 16.6001 12.2661V18.9328C16.6001 19.4794 16.1468 19.9328 15.6001 19.9328Z" fill="white" />
+											<path d="M15.3334 28.9996C7.80008 28.9996 1.66675 22.8663 1.66675 15.3329C1.66675 7.79959 7.80008 1.66626 15.3334 1.66626C22.8667 1.66626 29.0001 7.79959 29.0001 15.3329C29.0001 22.8663 22.8667 28.9996 15.3334 28.9996ZM15.3334 3.66626C8.89341 3.66626 3.66675 8.90626 3.66675 15.3329C3.66675 21.7596 8.89341 26.9996 15.3334 26.9996C21.7734 26.9996 27.0001 21.7596 27.0001 15.3329C27.0001 8.90626 21.7734 3.66626 15.3334 3.66626Z" fill="white" />
+											<path d="M29.3333 30.3328C29.0799 30.3328 28.8266 30.2394 28.6266 30.0394L25.9599 27.3728C25.5733 26.9861 25.5733 26.3461 25.9599 25.9594C26.3466 25.5728 26.9866 25.5728 27.3733 25.9594L30.0399 28.6261C30.4266 29.0128 30.4266 29.6528 30.0399 30.0394C29.8399 30.2394 29.5866 30.3328 29.3333 30.3328Z" fill="white" />
+										</svg>
+									</div>
+
+									<div class="education-card__title">Удостоверение о повышении квалификации</div>
+									<div class="education-card__desc">Московский институт психоанализа, г. Москва.</div>
+								</a>
+							</div>
+
+							<div class="swiper-slide">
+								<a href="#!" class="education-card" data-fancybox="education-gallery" data-src="./assets/images/pages/home/education_3.jpg">
+									<div class="education-card__img">
+										<img src="./assets/images/pages/home/education_3.jpg" alt="" />
+									</div>
+									<div class="education-card__btn desktop">
+										<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M18.9333 16.5996H12.2666C11.7199 16.5996 11.2666 16.1463 11.2666 15.5996C11.2666 15.0529 11.7199 14.5996 12.2666 14.5996H18.9333C19.4799 14.5996 19.9333 15.0529 19.9333 15.5996C19.9333 16.1463 19.4799 16.5996 18.9333 16.5996Z" fill="white" />
+											<path d="M15.6001 19.9328C15.0534 19.9328 14.6001 19.4794 14.6001 18.9328V12.2661C14.6001 11.7194 15.0534 11.2661 15.6001 11.2661C16.1468 11.2661 16.6001 11.7194 16.6001 12.2661V18.9328C16.6001 19.4794 16.1468 19.9328 15.6001 19.9328Z" fill="white" />
+											<path d="M15.3334 28.9996C7.80008 28.9996 1.66675 22.8663 1.66675 15.3329C1.66675 7.79959 7.80008 1.66626 15.3334 1.66626C22.8667 1.66626 29.0001 7.79959 29.0001 15.3329C29.0001 22.8663 22.8667 28.9996 15.3334 28.9996ZM15.3334 3.66626C8.89341 3.66626 3.66675 8.90626 3.66675 15.3329C3.66675 21.7596 8.89341 26.9996 15.3334 26.9996C21.7734 26.9996 27.0001 21.7596 27.0001 15.3329C27.0001 8.90626 21.7734 3.66626 15.3334 3.66626Z" fill="white" />
+											<path d="M29.3333 30.3328C29.0799 30.3328 28.8266 30.2394 28.6266 30.0394L25.9599 27.3728C25.5733 26.9861 25.5733 26.3461 25.9599 25.9594C26.3466 25.5728 26.9866 25.5728 27.3733 25.9594L30.0399 28.6261C30.4266 29.0128 30.4266 29.6528 30.0399 30.0394C29.8399 30.2394 29.5866 30.3328 29.3333 30.3328Z" fill="white" />
+										</svg>
+									</div>
+
+									<div class="education-card__title">Сертификат</div>
+									<div class="education-card__desc">Московский институт гештальта и психодрамы</div>
+								</a>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="swiper-btn swiper-btn-prev desktop">
+						<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M11.8125 30.8332L19.5692 19.9998L11.8125 9.1665H13.8458L21.6025 19.9998L13.8458 30.8332H11.8125ZM21.4742 30.8332L29.2292 19.9998L21.4742 9.1665H23.5058L31.2625 19.9998L23.5058 30.8332H21.4742Z" fill="#1D1D1B" />
+						</svg>
+					</div>
+
+					<div class="swiper-btn swiper-btn-next desktop">
+						<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M11.8125 30.8332L19.5692 19.9998L11.8125 9.1665H13.8458L21.6025 19.9998L13.8458 30.8332H11.8125ZM21.4742 30.8332L29.2292 19.9998L21.4742 9.1665H23.5058L31.2625 19.9998L23.5058 30.8332H21.4742Z" fill="#1D1D1B" />
+						</svg>
+					</div>
+				</div>
+			</section>
+
+			<include src="./components/consult_types.html"></include>
+
+			<include src="./components/request.html"></include>
+
+		</main>
+		<include src="./components/footer.html"></include>
+		<include src="./components/modal.html"></include>
+	</body>
+</html>

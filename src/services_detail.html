@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+		<title>Услуги детально</title>
+		<script src="https://api-maps.yandex.ru/2.1/?apikey=972ad756-2959-4091-a045-f5978143f734&lang=ru_RU"></script>
+	</head>
+	<body>
+		<include src="./components/header.html"></include>
+		<main>
+			<section class="banner">
+				<div class="container">
+					<div class="banner_text banner_text-top">
+						<div class="breadcrumbs">
+							<a href="#!">Главная</a>
+							<span class="montserrat">/</span>
+							<a href="#!">Услуги</a>
+							<span class="montserrat">/</span>
+							<a href="#!" class="active">Помощь при психологических травмах, утратах и горе</a>
+						</div>
+						<h1 class="banner_text-title h1">Помощь при психологических травмах, утратах и горе</h1>
+					</div>
+
+					<div class="banner_text banner_text-bottom">
+						<span class="banner_text-desc">Помогу облегчить эмоциональный стресс, выработать способы справиться с потерей и восстановить психологическое равновесие.</span>
+						<div class="banner_btns">
+							<button class="btn btn__primary" data-modal="request">
+								<span class="btn__text">Запись на консультацию</span>
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12.885 18.5L17.538 12L12.885 5.5H14.104L18.758 12L14.104 18.5H12.885Z" fill="white" />
+									<path d="M7.08789 18.5L11.7419 12L7.08789 5.5H8.30789L12.9619 12L8.30789 18.5H7.08789Z" fill="white" />
+								</svg>
+							</button>
+							<button class="btn btn__secondary">
+								<span class="btn__text">Подробнее</span>
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12 11.8334L12 14.75" stroke="#1D1D1B" stroke-linecap="round" />
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M13.1667 19.2837C13.1667 19.5207 13.3801 19.7015 13.6108 19.6472C16.7003 18.9196 19 16.145 19 12.8334L19 7.00005C19 3.13406 15.866 4.93171e-05 12 4.89791e-05C8.13401 4.86411e-05 5 3.13406 5 7.00005L5 12.8334C5 16.145 7.29968 18.9196 10.3892 19.6472C10.6199 19.7015 10.8333 19.5207 10.8333 19.2837C10.8333 19.0996 10.7018 18.9427 10.5228 18.8992C7.78862 18.2357 5.75834 15.7716 5.75834 12.8334L5.75834 7.00005C5.75834 3.55287 8.55283 0.758382 12 0.758382C15.4472 0.758382 18.2417 3.55287 18.2417 7.00005L18.2417 12.8334C18.2417 15.7716 16.2114 18.2357 13.4772 18.8992C13.2982 18.9427 13.1667 19.0996 13.1667 19.2837Z"
+										fill="#1D1D1B"
+									/>
+									<path d="M3 15V15C3 19.4183 6.58172 23 11 23L13 23C17.4183 23 21 19.4183 21 15V15" stroke="#1D1D1B" stroke-width="0.758333" stroke-linecap="round" />
+								</svg>
+							</button>
+						</div>
+						<div class="banner_consult desktop">
+							<div class="banner_consult-img">
+								<img src="./assets/images/pages/home/consult.png" alt="" />
+							</div>
+							<div class="banner_consult-text">
+								<div class="banner_consult-title">Этапы лечения</div>
+								<span class="banner_consult-desc">Лечение включает в себя 5 этапов</span>
+							</div>
+							<a href="#!" class="banner_consult-link">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M7.08789 18.5L11.7419 12L7.08789 5.5H8.30789L12.9619 12L8.30789 18.5H7.08789ZM12.8849 18.5L17.5379 12L12.8849 5.5H14.1039L18.7579 12L14.1039 18.5H12.8849Z" fill="white" />
+								</svg>
+							</a>
+						</div>
+					</div>
+
+					<div class="banner_right">
+						<div class="banner_right-img">
+							<img src="./assets/images/pages/services/services-detail.jpg" alt="" />
+						</div>
+
+						<div class="banner_bottom">
+							<div class="banner_symptoms">
+								<span class="tag">Психологические травмы</span>
+								<span class="tag">Утраты</span>
+								<span class="tag">Горе</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="stages">
+				<div class="container">
+					<div class="stages_title h1">Этапы лечения</div>
+					<div class="stages_cards">
+						<div class="stage-card">
+							<div class="stage-card_top">
+								<div class="stage-card_icon">
+									<svg class="svg-sm" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M21 21L31 31M12.6667 24.3333C6.22334 24.3333 1 19.11 1 12.6667C1 6.22334 6.22334 1 12.6667 1C19.11 1 24.3333 6.22334 24.3333 12.6667C24.3333 19.11 19.11 24.3333 12.6667 24.3333Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</div>
+								<div class="stage-card_num">01</div>
+							</div>
+							<div class="stage-card_title">Диагностика</div>
+							<div class="stage-card_desc">Важным шагом в начале лечения является проведение диагностики психологического состояния после травмы, горя или утраты.</div>
+							<button class="btn btn__primary" data-modal="request">
+								<span class="btn__text">Записаться</span>
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12.885 18.5L17.538 12L12.885 5.5H14.104L18.758 12L14.104 18.5H12.885Z" fill="white" />
+									<path d="M7.08789 18.5L11.7419 12L7.08789 5.5H8.30789L12.9619 12L8.30789 18.5H7.08789Z" fill="white" />
+								</svg>
+							</button>
+						</div>
+						<div class="stage-card">
+							<div class="stage-card_top">
+								<div class="stage-card_icon">
+									<svg class="svg-sm" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M22.6672 11L13.7783 21L9.33333 16M1 25.667V6.33366C1 4.46682 1 3.5327 1.36331 2.81966C1.68289 2.19245 2.19245 1.68289 2.81966 1.36331C3.5327 1 4.46682 1 6.33366 1H25.667C27.5338 1 28.466 1 29.179 1.36331C29.8062 1.68289 30.3175 2.19245 30.637 2.81966C31 3.532 31 4.46499 31 6.32818V25.6726C31 27.5358 31 28.4675 30.637 29.1798C30.3175 29.807 29.8062 30.3175 29.179 30.637C28.4667 31 27.535 31 25.6718 31H6.32818C4.46499 31 3.532 31 2.81966 30.637C2.19245 30.3175 1.68289 29.807 1.36331 29.1798C1 28.4668 1 27.5338 1 25.667Z"
+											stroke="white"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+								</div>
+								<div class="stage-card_num">02</div>
+							</div>
+							<div class="stage-card_title">Постановка целей</div>
+							<div class="stage-card_desc">Совместно определим цели лечения, которые могут включать восстановление эмоционального благополучия, принятие утраты и т.д.</div>
+							<button class="btn btn__primary" data-modal="request">
+								<span class="btn__text">Записаться</span>
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12.885 18.5L17.538 12L12.885 5.5H14.104L18.758 12L14.104 18.5H12.885Z" fill="white" />
+									<path d="M7.08789 18.5L11.7419 12L7.08789 5.5H8.30789L12.9619 12L8.30789 18.5H7.08789Z" fill="white" />
+								</svg>
+							</button>
+						</div>
+						<div class="stage-card">
+							<div class="stage-card_top">
+								<div class="stage-card_icon">
+									<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M32.4377 6.65692C27.9682 3.91539 24.0673 5.02019 21.724 6.78002C20.763 7.5016 20.2827 7.86239 20 7.86239C19.7173 7.86239 19.237 7.5016 18.276 6.78002C15.9327 5.02019 12.0318 3.91539 7.56239 6.65692C1.69678 10.2549 0.369528 22.1248 13.8992 32.139C16.4762 34.0463 17.7647 35 20 35C22.2353 35 23.5238 34.0463 26.1008 32.139C39.6305 22.1248 38.3032 10.2549 32.4377 6.65692Z" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+									</svg>
+								</div>
+								<div class="stage-card_num">03</div>
+							</div>
+							<div class="stage-card_title">Психотерапия</div>
+							<div class="stage-card_desc">Направлена на различные аспекты психического состояния - от обработки травматических событий до развития способов преодоления горя.</div>
+							<button class="btn btn__primary" data-modal="request">
+								<span class="btn__text">Записаться</span>
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12.885 18.5L17.538 12L12.885 5.5H14.104L18.758 12L14.104 18.5H12.885Z" fill="white" />
+									<path d="M7.08789 18.5L11.7419 12L7.08789 5.5H8.30789L12.9619 12L8.30789 18.5H7.08789Z" fill="white" />
+								</svg>
+							</button>
+						</div>
+						<div class="stage-card">
+							<div class="stage-card_top">
+								<div class="stage-card_icon">
+									<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M27.1805 7.30661C26.1955 7.30661 25.7028 7.30661 25.2541 7.14012C25.1918 7.11699 25.1305 7.09156 25.07 7.06384C24.635 6.86429 24.2868 6.51602 23.5901 5.81949C21.987 4.21632 21.1855 3.41474 20.1991 3.34082C20.0666 3.33089 19.9333 3.33089 19.8008 3.34082C18.8145 3.41474 18.0128 4.21632 16.4097 5.81947C15.7132 6.51602 15.3649 6.86429 14.9299 7.06384C14.8695 7.09156 14.8081 7.11699 14.7458 7.14012C14.2971 7.30661 13.8045 7.30661 12.8195 7.30661H12.6378C10.1246 7.30661 8.86803 7.30661 8.0873 8.08736C7.30655 8.86809 7.30655 10.1247 7.30655 12.6379V12.8196C7.30655 13.8046 7.30655 14.2971 7.14006 14.7458C7.11693 14.8081 7.0915 14.8696 7.06378 14.93C6.86423 15.365 6.51596 15.7133 5.81941 16.4098C4.21626 18.0129 3.41468 18.8145 3.34076 19.8009C3.33083 19.9334 3.33083 20.0667 3.34076 20.1992C3.41468 21.1855 4.21626 21.987 5.81941 23.5902C6.51596 24.2869 6.86423 24.635 7.06378 25.07C7.0915 25.1305 7.11693 25.1919 7.14006 25.2542C7.30655 25.7029 7.30655 26.1955 7.30655 27.1805V27.3622C7.30655 29.8754 7.30655 31.132 8.0873 31.9127C8.86803 32.6935 10.1246 32.6935 12.6378 32.6935H12.8195C13.8045 32.6935 14.2971 32.6935 14.7458 32.8599C14.8081 32.883 14.8695 32.9085 14.9299 32.9362C15.3649 33.1359 15.7132 33.484 16.4097 34.1805C18.0128 35.7837 18.8145 36.5854 19.8008 36.6592C19.9333 36.6692 20.0666 36.6692 20.1991 36.6592C21.1855 36.5854 21.987 35.7837 23.5901 34.1805C24.2868 33.484 24.635 33.1359 25.07 32.9362C25.1305 32.9085 25.1918 32.883 25.2541 32.8599C25.7028 32.6935 26.1955 32.6935 27.1805 32.6935H27.3621C29.8753 32.6935 31.132 32.6935 31.9126 31.9127C32.6935 31.132 32.6935 29.8754 32.6935 27.3622V27.1805C32.6935 26.1955 32.6935 25.7029 32.8598 25.2542C32.883 25.1919 32.9085 25.1305 32.9361 25.07C33.1358 24.635 33.484 24.2869 34.1805 23.5902C35.7836 21.987 36.5853 21.1855 36.6591 20.1992C36.6691 20.0667 36.6691 19.9334 36.6591 19.8009C36.5853 18.8145 35.7836 18.0129 34.1805 16.4098C33.484 15.7133 33.1358 15.365 32.9361 14.93C32.9085 14.8696 32.883 14.8081 32.8598 14.7458C32.6935 14.2971 32.6935 13.8046 32.6935 12.8196V12.6379C32.6935 10.1247 32.6935 8.86809 31.9126 8.08736C31.132 7.30661 29.8753 7.30661 27.3621 7.30661H27.1805Z"
+											stroke="white"
+											stroke-width="1.5"
+										/>
+										<path d="M14.1667 27.5C15.3311 25.4872 17.5074 24.1329 20 24.1329C22.4927 24.1329 24.669 25.4872 25.8334 27.5M23.3334 16.6667C23.3334 18.5077 21.841 20 20 20C18.1592 20 16.6667 18.5077 16.6667 16.6667C16.6667 14.8258 18.1592 13.3334 20 13.3334C21.841 13.3334 23.3334 14.8258 23.3334 16.6667Z" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+									</svg>
+								</div>
+								<div class="stage-card_num">04</div>
+							</div>
+							<div class="stage-card_title">Развитие стратегий саморегуляции</div>
+							<div class="stage-card_desc">Помогу укрепить собственные силы и научиться справляться с трудностями в будущем.</div>
+							<button class="btn btn__primary" data-modal="request">
+								<span class="btn__text">Записаться</span>
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12.885 18.5L17.538 12L12.885 5.5H14.104L18.758 12L14.104 18.5H12.885Z" fill="white" />
+									<path d="M7.08789 18.5L11.7419 12L7.08789 5.5H8.30789L12.9619 12L8.30789 18.5H7.08789Z" fill="white" />
+								</svg>
+							</button>
+						</div>
+						<div class="stage-card stage-card--big">
+							<div class="stage-card_top">
+								<div class="stage-card_icon">
+									<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M19.9987 36.6667C29.2034 36.6667 36.6654 29.2048 36.6654 20C36.6654 10.7953 29.2034 3.33337 19.9987 3.33337C10.794 3.33337 3.33203 10.7953 3.33203 20C3.33203 29.2048 10.794 36.6667 19.9987 36.6667Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M13.332 25C14.8522 27.024 17.2725 28.3333 19.9987 28.3333C22.7249 28.3333 25.1452 27.024 26.6654 25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M13.347 15H13.332M26.6654 15H26.6504" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</div>
+								<div class="stage-card_num">05</div>
+							</div>
+							<div class="stage-card_title">Завершение терапии и поддержка</div>
+							<div class="stage-card_desc">Помогу комфортно завершить терапию и обрести внутреннюю опору</div>
+							<button class="btn btn__primary" data-modal="request">
+								<span class="btn__text">Записаться</span>
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12.885 18.5L17.538 12L12.885 5.5H14.104L18.758 12L14.104 18.5H12.885Z" fill="white" />
+									<path d="M7.08789 18.5L11.7419 12L7.08789 5.5H8.30789L12.9619 12L8.30789 18.5H7.08789Z" fill="white" />
+								</svg>
+							</button>
+							<div class="stage-card_img desktop">
+								<img src="./assets/images/components/stage-card.jpg" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="symptoms">
+				<div class="container">
+					<div class="symptoms_left">
+						<div class="symptoms_title h1">Как понять, что нужна помощь психолога?</div>
+						<ul class="symptoms_list">
+							<li>Если прошло много времени, а депрессия не ослабевает, человек чувствует себя так, будто потеря произошла вчера</li>
+							<li>Если утрачивается способность радоваться, жить обычной жизнью, строить отношения с людьми</li>
+							<li>Если сохраняется ощущение безнадежности, бессмысленности существования</li>
+							<li>Если скорбные чувства и внешние проявления горя отсутствуют совсем, словно его и не было</li>
+						</ul>
+					</div>
+					<div class="symptoms_right">
+						<div class="symptoms_img">
+							<img src="./assets/images/components/symptoms.jpg" alt="" />
+						</div>
+						<div class="symptoms_ps desktop">
+							<div class="symptoms_ps__icon">
+								<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M15 27.5C21.9036 27.5 27.5 21.9036 27.5 15C27.5 8.09644 21.9036 2.5 15 2.5C8.09644 2.5 2.5 8.09644 2.5 15C2.5 21.9036 8.09644 27.5 15 27.5Z" stroke="black" stroke-width="1.5" />
+									<path d="M14.9883 18.75H14.9995" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M15 15V10" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</div>
+							<div class="symptoms_ps__text">
+								<div class="symptoms_ps__title">Важно</div>
+								<div class="symptoms_ps__desc">Два года — срок, в который работа горя должна быть завершена. </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<include src="./components/request_sm.html"></include>
+
+			<include src="./components/consult_types.html"></include>
+
+			<include src="./components/request.html"></include>
+		</main>
+		<include src="./components/footer.html"></include>
+		<include src="./components/modal.html"></include>
+	</body>
+</html>

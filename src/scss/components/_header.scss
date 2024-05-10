@@ -1,0 +1,99 @@
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: $bg;
+	z-index: 10;
+
+	&_content {
+		padding: 3.6rem 0 0.8rem;
+		display: flex;
+		align-items: center;
+
+		@media (max-width: 48em) {
+			justify-content: space-between;
+			padding: 2.6rem 0;
+		}
+	}
+
+	&_logo {
+		font-size: 2rem;
+		font-weight: 700;
+		margin-right: 26.05rem;
+		white-space: nowrap;
+
+		@media (max-width: 48em) {
+			margin-right: unset;
+			font-size: 4rem;
+			font-weight: 600;
+		}
+	}
+
+	&_nav {
+		display: flex;
+		gap: 3.2rem;
+
+		a {
+			text-transform: uppercase;
+			font-size: 1.6rem;
+			white-space: nowrap;
+		}
+
+		@media (max-width: 48em) {
+			flex-direction: column;
+			gap: 6.4rem;
+
+			a {
+				font-size: 3.2rem;
+			}
+		}
+	}
+
+	.btn__secondary {
+		margin-left: auto;
+		padding: 1.05rem 2rem;
+
+		.btn__text {
+			font-size: 1.6rem;
+		}
+	}
+
+	&_burger-btn,
+	&_call {
+		cursor: pointer;
+		svg {
+			width: 8rem;
+			height: 8rem;
+		}
+	}
+
+	&_mob-menu {
+		display: none;
+		background-color: $bg;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		padding: 11.6rem 4rem;
+
+		&__content {
+			display: flex;
+			flex-direction: column;
+			gap: 9.6rem;
+		}
+	}
+
+	.btn-close {
+		cursor: pointer;
+		svg {
+			width: 4.8rem;
+			height: 4.8rem;
+		}
+	}
+
+	.btn__primary {
+		width: 100%;
+	}
+}

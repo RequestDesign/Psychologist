@@ -1,0 +1,57 @@
+<div class="modal modal-request">
+	<div class="modal-back"></div>
+	<div class="modal-wrapper">
+		<button class="modal-exit" data-modal="close-modal">
+			<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M30.9998 30.9998L16 16M16 16L1 1M16 16L31 1M16 16L1 31" stroke="#1D1D1B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+		</button>
+		<div class="modal-content">
+			<div class="modal_title">Запишитесь <br>на консультацию</div>
+			<form class="modal_form">
+				<div class="modal_form__inputs">
+					<div class="modal_form__input"><input type="text" placeholder="Ваше имя" /></div>
+					<div class="modal_form__input"><input type="text" class="input-phone" placeholder="Номер телефона" /></div>
+					<div class="modal_form__input"><input type="email" placeholder="E-mail" /></div>
+					<div class="modal_form__input"><textarea placeholder="Опишите свою проблему в 2-3 предложениях"></textarea></div>
+				</div>
+
+				<div class="modal_form__checkbox">
+					<label class="input-checkbox">
+						<input type="checkbox" />
+					</label>
+					<span>Я согласен на <a href="#!">обработку персональных данных</a></span>
+				</div>
+				<button class="btn btn__primary">
+					<span class="btn__text">Запись на консультацию</span>
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M12.885 18.5L17.538 12L12.885 5.5H14.104L18.758 12L14.104 18.5H12.885Z" fill="white" />
+						<path d="M7.08789 18.5L11.7419 12L7.08789 5.5H8.30789L12.9619 12L8.30789 18.5H7.08789Z" fill="white" />
+					</svg>
+				</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="modal modal-success">
+	<div class="modal-back"></div>
+	<div class="modal-wrapper">
+		<button class="modal-exit" data-modal="close-modal">
+			<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M30.9998 30.9998L16 16M16 16L1 1M16 16L31 1M16 16L1 31" stroke="#1D1D1B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+		</button>
+		<div class="modal-content">
+			<div class="modal_title">Вы записаны<br>на консультацию!</div>
+			<div class="modal_desc">Ассистент свяжется с вами в ближайшее время</div>
+			<button class="btn btn__primary" data-modal="close-modal">
+				<span class="btn__text">Вернуться на главную</span>
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M12.885 18.5L17.538 12L12.885 5.5H14.104L18.758 12L14.104 18.5H12.885Z" fill="white" />
+					<path d="M7.08789 18.5L11.7419 12L7.08789 5.5H8.30789L12.9619 12L8.30789 18.5H7.08789Z" fill="white" />
+				</svg>
+			</button>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,335 @@
+.banner {
+	.container {
+		display: grid;
+		grid-template-columns: 76.8rem auto;
+		gap: 2.4rem 12.2rem;
+
+		@media (max-width: 48em) {
+			grid-template-columns: 100%;
+			gap: 6.4rem;
+		}
+	}
+
+	&_text {
+		.breadcrumbs {
+			overflow-x: hidden;
+			margin-bottom: 2.4rem;
+
+			@media (max-width: 48em) {
+				margin-bottom: 6.4rem;
+				overflow-x: auto;
+			}
+		}
+
+		&-title {
+			text-wrap: pretty;
+		}
+
+		&-desc {
+			display: inline-block;
+			margin-bottom: 4rem;
+			font-size: 2rem;
+			width: 67.8rem;
+
+			@media (max-width: 48em) {
+				margin-bottom: 6.4rem;
+				font-size: 3.2rem;
+				width: 100%;
+			}
+		}
+	}
+
+	&_consult {
+		padding: 3.2rem;
+		background-color: #ffffff;
+		display: flex;
+		gap: 2.8rem;
+		border-radius: 2rem;
+		border: 0.13rem solid #ffffff;
+		margin-top: 12.1rem;
+		width: 67.8rem;
+
+		&-img {
+			width: 12rem;
+			height: 12rem;
+			margin-top: -5.9rem;
+			border-radius: 50%;
+			overflow: hidden;
+			border: 1px solid #fff;
+
+			img {
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+		&-text {
+			width: 40rem;
+			display: flex;
+			flex-direction: column;
+			gap: 0.4rem;
+		}
+		&-title {
+			font-size: 2.4rem;
+			font-weight: 600;
+			margin-bottom: 0.4rem;
+		}
+
+		&-desc {
+			font-size: 1.6rem;
+		}
+
+		&-link {
+			align-self: center;
+			width: 4rem;
+			height: 4rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50%;
+			background-color: #1d1d1b;
+			img,
+			svg {
+				width: 2.4rem;
+				height: 2.4rem;
+			}
+		}
+	}
+
+	&_btns {
+		display: flex;
+		gap: 2rem;
+
+		@media (max-width: 48em) {
+			flex-direction: column;
+			gap: 2.4rem;
+		}
+
+		.btn__primary,
+		.btn__secondary {
+			@media (max-width: 48em) {
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				padding: 3.4rem 8.6rem;
+
+				.btn__text {
+					font-size: 3.6rem;
+				}
+			}
+		}
+	}
+
+	&_info {
+		position: relative;
+		margin-left: auto;
+		width: 21.9rem;
+		height: 20.2rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 6.3rem 1.6rem 1.6rem 1.6rem;
+		background-image: url('../../assets/images/pages/home/border_mark.svg');
+		background-size: 100% 100%;
+
+		&.mobile{
+			background-image: none;
+			position: absolute;
+			top: 2rem;
+			right: 1.6rem;
+			padding: 1rem 2.7rem;
+			flex-direction: row;
+			gap: 1rem;
+			justify-content: start;
+			align-items: center;
+			width: fit-content;
+			height: fit-content;
+			background-color: #FFFFFF99;
+			border: 0.2rem solid #FFFFFF;
+			border-radius: 20rem;
+
+			span{
+				font-size: 3.2rem;
+				line-height: 3.84rem;
+				font-weight: 400;
+			}
+
+			svg{
+				width: 4.8rem;
+				height: 4.8rem;
+			}
+		}
+
+		&-link {
+			position: absolute;
+			top: 0;
+			right: 0;
+			padding: 0.8rem 2rem;
+			border-radius: 10rem;
+			background-color: #fff;
+			font-size: 1.6rem;
+			font-weight: 400;
+		}
+
+		&-category {
+			width: fit-content;
+			display: inline-block;
+			padding: 0.4rem 1.6rem;
+			font-size: 1.6rem;
+			margin-bottom: 1.2rem;
+			border-radius: 10rem;
+			line-height: 1;
+			border: 1px solid #1d1d1b;
+		}
+
+		&-text {
+			display: inline-flex;
+			flex-direction: column;
+			font-size: 1.6rem;
+			line-height: 1.9rem;
+		}
+
+		&-mark {
+			display: inline-block;
+			align-self: flex-end;
+			font-size: 1.2rem;
+		}
+
+		&-placemark {
+			position: absolute;
+			top: 1.6rem;
+			left: 1.9rem;
+			width: 4.4rem;
+			height: 4.4rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50%;
+			background-color: #ffffff;
+			img {
+				width: 2.4rem;
+				height: 2.4rem;
+			}
+		}
+	}
+
+	&_right {
+		grid-area: 1 / 2 / 3 / 3;
+		position: relative;
+		width: 80rem;
+		height: 80rem;
+		padding: 2.4rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		@media (max-width: 48em) {
+			grid-area: 2;
+			width: fit-content;
+			height: fit-content;
+			padding: unset;
+			gap: 2.4rem;
+		}
+
+		&-img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+			-webkit-mask-image: url('../../assets/images/pages/home/photo-mask.png');
+			mask-image: url('../../assets/images/pages/home/photo-mask.png');
+			-webkit-mask-repeat: no-repeat;
+			mask-repeat: no-repeat;
+			mask-size: 100% 100%;
+
+			@media (max-width: 48em) {
+				position: static;
+				width: 100%;
+				height: 66.8rem;
+				-webkit-mask-image: url('../../assets/images/pages/home/photo-mask-mob.png');
+				mask-image: url('../../assets/images/pages/home/photo-mask-mob.png');
+			}
+
+			img{
+				object-position: top;
+    			transform: scale(1.05);
+			}
+		}
+	}
+
+	&_bottom {
+		display: flex;
+		align-items: end;
+		justify-content: space-between;
+		margin-top: auto;
+	}
+
+	&_symptoms {
+		display: flex;
+		margin-left: auto;
+
+		@media (max-width: 48em) {
+			gap: 0.6rem;
+		}
+
+		.tag {
+			font-size: 1.6rem;
+			color: #1d1d1b;
+
+			@media (max-width: 48em) {
+				font-size: 2.4rem;
+				border: 0.2rem solid #1d1d1b;
+				background-color: transparent;
+				padding: 2rem 3.9rem;
+			}
+		}
+	}
+
+	&_help {
+		position: relative;
+		padding: 1.6rem;
+		-webkit-mask-image: url('./../../assets/images/pages/home/border_help.png');
+		mask-image: url('./../../assets/images/pages/home/border_help.png');
+		-webkit-mask-repeat: no-repeat;
+		mask-repeat: no-repeat;
+		mask-size: 100% 100%;
+		background-color: #e7e7e7b2;
+		backdrop-filter: blur(14px);
+		transform: translateX(-6.6rem);
+
+		&-img {
+			width: 24.1rem;
+			height: 18.1rem;
+			-webkit-mask-image: url('./assets/images/pages/home/help-mask.png');
+			mask-image: url('./assets/images/pages/home/help-mask.png');
+			-webkit-mask-repeat: no-repeat;
+			mask-repeat: no-repeat;
+			mask-size: 100% 100%;
+			border-radius: 2rem;
+			overflow: hidden;
+			margin-bottom: 0.8rem;
+		}
+		&-link {
+			position: absolute;
+			top: 5.4rem;
+			right: 3.2rem;
+			width: 4rem;
+			height: 4rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 50%;
+			background-color: #fff;
+			img {
+				width: 2.4rem;
+				height: 2.4rem;
+			}
+		}
+		&-title {
+			font-size: 2.4rem;
+			font-weight: 500;
+			text-align: center;
+		}
+	}
+}

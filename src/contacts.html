@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Контакты</title>
+		<script src="https://api-maps.yandex.ru/2.1/?apikey=972ad756-2959-4091-a045-f5978143f734&lang=ru_RU"></script>
+	</head>
+	<body>
+		<include src="./components/header.html"></include>
+		<main>
+			<section class="contacts">
+				<div class="container">
+					<div class="breadcrumbs">
+						<a href="#!">Главная</a>
+						<span class="montserrat">/</span>
+						<a href="#!" class="active">Контакты</a>
+					</div>
+					<div class="contacts_content">
+						<div class="contacts_top">
+							<div class="h1">Контакты</div>
+							<div class="desc">Я работаю онлайн, также возможны личные встречи в приемной в Деловом Центре Москва-Сити</div>
+						</div>
+
+						<div class="contacts_address">
+							<div class="contacts_address__items">
+								<div class="contacts_address__item">
+									<div class="contacts_address__item_icon">
+										<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M11.6666 30C8.61841 30.6862 6.66663 31.7405 6.66663 32.9228C6.66663 34.9905 12.6362 36.6667 20 36.6667C27.3638 36.6667 33.3333 34.9905 33.3333 32.9228C33.3333 31.7405 31.3815 30.6862 28.3333 30" stroke="#1D1D1B" stroke-width="1.5" stroke-linecap="round" />
+											<path d="M24.1667 15C24.1667 17.3012 22.3012 19.1667 20 19.1667C17.6989 19.1667 15.8334 17.3012 15.8334 15C15.8334 12.6988 17.6989 10.8333 20 10.8333C22.3012 10.8333 24.1667 12.6988 24.1667 15Z" stroke="#1D1D1B" stroke-width="1.5" />
+											<path d="M22.0957 29.156C21.5335 29.6973 20.7822 30 20.0004 30C19.2184 30 18.467 29.6973 17.9049 29.156C12.7572 24.168 5.85869 18.5958 9.22289 10.5062C11.0419 6.1322 15.4083 3.33333 20.0004 3.33333C24.5924 3.33333 28.9587 6.13221 30.7777 10.5062C34.1377 18.5857 27.256 24.1852 22.0957 29.156Z" stroke="#1D1D1B" stroke-width="1.5" />
+										</svg>
+									</div>
+
+									<div class="contacts_address__item_text">
+										<span class="title">Адрес</span>
+										<span>Деловой Центр Москва-Сити</span>
+									</div>
+								</div>
+
+								<div class="contacts_address__item">
+									<div class="contacts_address__item_icon">
+										<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M6.29607 19.904C4.71604 17.1488 3.95312 14.8991 3.49311 12.6187C2.81274 9.24598 4.36972 5.95136 6.94901 3.84913C8.03912 2.96065 9.28876 3.26421 9.93337 4.42068L11.3887 7.03153C12.5422 9.10096 13.1189 10.1357 13.0045 11.2327C12.8902 12.3297 12.1123 13.2231 10.5567 15.01L6.29607 19.904ZM6.29607 19.904C9.49422 25.4805 14.5131 30.5022 20.096 33.704M20.096 33.704C22.8512 35.284 25.1009 36.047 27.3814 36.507C30.754 37.1873 34.0487 35.6303 36.1509 33.051C37.0394 31.961 36.7359 30.7113 35.5794 30.0667L32.9685 28.6113C30.899 27.4578 29.8644 26.8812 28.7674 26.9955C27.6704 27.1098 26.7769 27.8877 24.99 29.4433L20.096 33.704Z"
+												stroke="#1D1D1B"
+												stroke-width="1.5"
+												stroke-linejoin="round"
+											/>
+										</svg>
+									</div>
+
+									<div class="contacts_address__item_text">
+										<span class="title">Телефон ассистента</span>
+										<a href="tel:+79060972369"><span class="montserrat">+</span>7 906 097-23-69 </a>
+									</div>
+								</div>
+
+								<div class="contacts_address__item">
+									<div class="contacts_address__item_icon">
+										<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M3.33337 10L14.8551 16.5283C19.1027 18.935 20.8974 18.935 25.145 16.5283L36.6667 10" stroke="#1D1D1B" stroke-width="1.5" stroke-linejoin="round" />
+											<path
+												d="M3.35966 22.4593C3.46861 27.5687 3.52309 30.1232 5.40831 32.0157C7.29351 33.908 9.91726 33.9738 15.1648 34.1057C18.3989 34.187 21.6012 34.187 24.8354 34.1057C30.0829 33.9738 32.7065 33.908 34.5919 32.0157C36.477 30.1232 36.5315 27.5687 36.6404 22.4593C36.6755 20.8165 36.6755 19.1835 36.6404 17.5407C36.5315 12.4314 36.477 9.87683 34.5919 7.98445C32.7065 6.09206 30.0829 6.02615 24.8354 5.8943C21.6012 5.81303 18.3989 5.81303 15.1647 5.89428C9.91726 6.02611 7.29351 6.09203 5.40829 7.98443C3.52307 9.87681 3.46861 12.4314 3.35964 17.5407C3.32461 19.1835 3.32462 20.8165 3.35966 22.4593Z"
+												stroke="#1D1D1B"
+												stroke-width="1.5"
+												stroke-linejoin="round"
+											/>
+										</svg>
+									</div>
+
+									<div class="contacts_address__item_text">
+										<span class="title">Почта</span>
+										<a href="mailto:manager@gmail.com">manager<span class="montserrat">@</span>gmail.com</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="map-wrapper">
+								<div id="map" class="map"></div>
+								<div class="map-wrapper_tab-container">
+									<div class="tab desktop">Очные консультации</div>
+									<div class="tab mobile">Личные встречи</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<include src="./components/request.html"></include>
+		</main>
+		<include src="./components/footer.html"></include>
+		<include src="./components/modal.html"></include>
+	</body>
+</html>

@@ -1,0 +1,66 @@
+.map-wrapper {
+    position: relative;
+    width: fit-content;
+
+    .map {
+        width: 92.5rem;
+        height: 49.3rem;
+        border-radius: 3.2rem;
+        overflow: hidden;
+        mask-image: url('./../../assets/images/pages/contacts/map-mask.png');
+        mask-size: 100% 100%;
+
+        @media (max-width: 48em) {
+            width: 67rem;
+            height: 46.4rem;
+            border-radius: 4rem;
+            mask-image: url('./../../assets/images/pages/contacts/map-mask-mob.png');
+        }
+
+        .ymaps-2-1-79-gotoymaps__container,
+        .ymaps-2-1-79-gototech,
+        .ymaps-2-1-79-gototaxi {
+            display: none;
+        }
+
+        .ymaps-2-1-79-image {
+            width: 5rem;
+            height: 7rem;
+            background-size: 100% 100% !important;
+            background-repeat: no-repeat;
+
+            @media (max-width: 48em) {
+                width: 6.4rem;
+                height: 9rem;
+            }
+        }
+    }
+
+    &_tab-container {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: fit-content;
+        width: fit-content;
+
+        .tab {
+            width: fit-content;
+            background-color: #fff;
+            border-radius: 2rem;
+            padding: 1rem 2rem;
+            font-size: 1.6rem;
+            white-space: nowrap;
+            line-height: 1.2;
+            border: 0.13rem solid #fff;
+
+            @media (max-width: 48em) {
+                background-color: #1d1d1b;
+                color: #fff;
+                border-radius: 20rem;
+                padding: 2rem 2.5rem;
+                font-size: 2.4rem;
+                border: 0.2rem solid #1D1D1B;
+            }
+        }
+    }
+}

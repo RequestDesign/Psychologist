@@ -1,0 +1,110 @@
+.about {
+	&__title {
+		margin-bottom: 6rem;
+
+		@media (max-width: 48em) {
+			margin-bottom: 6.4rem;
+		}
+	}
+
+	&__desc {
+		display: block;
+		width: 78.6rem;
+		margin-bottom: 10rem;
+		margin-left: auto;
+		font-size: 2rem;
+		font-weight: 400;
+		b {
+			font-family: 'Inter';
+		}
+	}
+
+	&__main {
+		display: flex;
+		gap: 16.4rem;
+
+		@media (max-width: 48em) {
+			flex-direction: column;
+			gap: 6.4rem;
+		}
+	}
+	&__info {
+		width: 65rem;
+		display: flex;
+		flex-direction: column;
+
+		@media (max-width: 48em) {
+			width: 100%;
+		}
+
+		&-text {
+			text-wrap: balance;
+			padding: 4rem 0;
+			font-size: 2rem;
+			border-top: 0.13rem solid #cbc7c7;
+
+			&:last-child {
+				border-bottom: 0.13rem solid #cbc7c7;
+			}
+
+			&:first-child {
+				@media (max-width: 48em) {
+					padding-top: 0;
+				}
+			}
+
+			@media (max-width: 48em) {
+				font-size: 3.2rem;
+				border-top: none;
+				border-bottom: 0.13rem solid #cbc7c7;
+				padding: 8rem 0;
+			}
+		}
+	}
+	&__photos {
+		width: 78.6rem;
+		display: flex;
+		gap: 2.8rem;
+
+		@media (max-width: 48em) {
+			gap: unset;
+			height: 86.8rem;
+			width: 100%;
+		}
+
+		&-img {
+			position: relative;
+			width: 37.9rem;
+			height: 49.2rem;
+			overflow: hidden;
+
+			@media (max-width: 48em) {
+				width: 100%;
+				height: 100%;
+			}
+
+			&:first-child {
+				-webkit-mask-image: url('../../assets/images/pages/home/about_mask.png');
+				mask-image: url('../../assets/images/pages/home/about_mask.png');
+				-webkit-mask-repeat: no-repeat;
+				mask-size: 100% 100%;
+				mask-repeat: no-repeat;
+			}
+			&:last-child {
+				-webkit-mask-image: url('../../assets/images/pages/home/about_mask_1.png');
+				mask-image: url('../../assets/images/pages/home/about_mask_1.png');
+				mask-size: 100% 100%;
+				-webkit-mask-repeat: no-repeat;
+				mask-repeat: no-repeat;
+
+				@media (max-width: 48em) {
+					-webkit-mask-image: url('../../assets/images/pages/home/about_mask-mob.png');
+					mask-image: url('../../assets/images/pages/home/about_mask-mob.png');
+				}
+			}
+			img {
+				height: 100%;
+			}
+		}
+	}
+}
