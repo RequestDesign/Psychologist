@@ -1,116 +1,119 @@
-.publications-detail{
+.publications-detail {
+	&_content {
+		margin-top: 6rem;
 
-    &_content{
-        margin-top: 6rem;
-
-        @media (max-width: 48em) {
+		@media (max-width: 48em) {
 			margin-top: 6.4rem;
-            display: flex;
-            flex-direction: column;
+			display: flex;
+			flex-direction: column;
+
+			& > a {
+				display: contents;
+			}
 		}
-    }
+	}
 
-    &_date{
-        font-weight: 300;
-        color: #898585;
-        font-size: 2rem;
-        margin-bottom: 2.4rem;
+	&_date {
+		font-weight: 300;
+		color: #898585;
+		font-size: 2rem;
+		margin-bottom: 2.4rem;
 
-        @media (max-width: 48em) {
+		@media (max-width: 48em) {
 			font-size: 3.2rem;
-            margin-bottom: 4rem;
-            order: 1;
+			margin-bottom: 4rem;
+			order: 1;
 		}
-    }
+	}
 
-    &_title{
-        margin-bottom: 3.2rem;
+	&_title {
+		margin-bottom: 3.2rem;
 
-        @media (max-width: 48em) {
+		@media (max-width: 48em) {
 			margin-bottom: 6.4rem;
-            order: 2;
+			order: 2;
 		}
-    }
+	}
 
-    &_right{
-        float: right;
-        padding: 0 0 7.3rem 2.9rem;
-        position: relative;
+	&_right {
+		float: right;
+		padding: 0 0 7.3rem 2.9rem;
+		position: relative;
 
-        @media (max-width: 48em) {
-            float: unset;
+		@media (max-width: 48em) {
+			float: unset;
 			padding: unset;
-            margin-bottom: 4.8rem;
-            order: 3;
+			margin-bottom: 4.8rem;
+			order: 3;
 		}
-    }
+	}
 
-    &_img-wrapper{
-        width: 78.6rem;
-        height: 80.6rem;
-        mask-image: url('./../../assets/images/pages/publications-detail/pub-det-mask.png');
+	&_img-wrapper {
+		width: 78.6rem;
+		height: 80.6rem;
+		mask-image: url('./../../assets/images/pages/publications-detail/pub-det-mask.png');
 		mask-size: 100% 100%;
 
-        @media (max-width: 48em) {
-            width: 100%;
-            height: 66.8rem;
-            mask-image: url('./../../assets/images/pages/publications-detail/pub-det-mask-mob.png');
+		@media (max-width: 48em) {
+			width: 100%;
+			height: 66.8rem;
+			mask-image: url('./../../assets/images/pages/publications-detail/pub-det-mask-mob.png');
 		}
-    }
+	}
 
-    &_tags{
-        position: absolute;
-        bottom: 10rem;
-        right: 2.1rem;
-        display: flex;
+	&_tags {
+		position: absolute;
+		bottom: 10rem;
+		right: 2.1rem;
+		display: flex;
 
-        @media (max-width: 48em) {
-           position: static;
-           margin-top: 2.4rem;  
-           flex-wrap: wrap;
-           gap: 0.8rem; 
+		@media (max-width: 48em) {
+			position: static;
+			margin-top: 2.4rem;
+			flex-wrap: wrap;
+			gap: 0.8rem;
 		}
-        
-        .tag{
-            color: $fontColor;
-            font-size: 1.6rem;
-            border: 0.13rem solid #FFFFFF;
 
-            @media (max-width: 48em) {
-                font-size: 2.4rem;
-                border: 0.2rem solid #1D1D1B;  
-                background-color: transparent;
-             }
-        }
-    }
+		.tag {
+			color: $fontColor;
+			font-size: 1.6rem;
+			border: 0.13rem solid #ffffff;
 
-    &_text{
-        p{
-            font-size: 2rem;
-            margin-bottom: 4.8rem;
+			@media (max-width: 48em) {
+				font-size: 2.4rem;
+				border: 0.2rem solid #1d1d1b;
+				background-color: transparent;
+			}
+		}
+	}
 
-            @media (max-width: 48em) {
-                font-size: 3.2rem;
-                margin-bottom: 6.4rem;
-            }
-        }
+	&_text {
+		p {
+			font-size: 2rem;
+			margin-bottom: 4.8rem;
 
-        .subtitle{
-            margin-bottom: 2rem;
+			@media (max-width: 48em) {
+				font-size: 3.2rem;
+				margin-bottom: 6.4rem;
+			}
+		}
 
-            @media (max-width: 48em) {
-                margin-bottom: 4.8rem;
-            }
-        }
+		.subtitle {
+			margin-bottom: 2rem;
 
-        @media (max-width: 48em) {
-            order: 4;
-        }
-    }
+			@media (max-width: 48em) {
+				margin-bottom: 4.8rem;
+			}
+		}
 
-    .btn__back{
-        @media (max-width: 48em) {
-            order: 5;
-        }
-    }
+		@media (max-width: 48em) {
+			order: 4;
+		}
+	}
+
+	.btn__back {
+		@media (max-width: 48em) {
+			order: 5;
+		}
+	}
 }
