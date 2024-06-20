@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Контакты</title>
+		<script src="https://api-maps.yandex.ru/2.1/?apikey=972ad756-2959-4091-a045-f5978143f734&lang=ru_RU"></script>
+	<script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
+	<body>
+		<header class="header">
+	<div class="container">
+		<div class="header_content">
+			<div class="header_burger-btn mobile">
+				<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<circle cx="20" cy="20" r="19.5" stroke="#1D1D1B"></circle>
+					<path d="M11.25 26.25H28.75M11.25 20H28.75M11.25 13.75H28.75" stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round"></path>
+				</svg>
+			</div>
+			<a href="#!" class="header_logo">Алина Гарибова</a>
+			<nav class="header_nav desktop">
+				<a href="#!">Обо мне</a>
+				<a href="#!">Образование</a>
+				<a href="#!">Виды консультаций</a>
+				<a href="#!">Услуги</a>
+				<a href="#!">Публикации</a>
+				<a href="#!">Контакты</a>
+			</nav>
+			<button class="btn btn__secondary desktop" data-modal="request">
+				<div class="btn__text">Запись на консультацию</div>
+				<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M7.08984 19L11.7438 12.5L7.08984 6H8.30984L12.9638 12.5L8.30984 19H7.08984ZM12.8868 19L17.5398 12.5L12.8868 6H14.1058L18.7598 12.5L14.1058 19H12.8868Z" fill="#1D1D1B"></path>
+				</svg>
+			</button>
+			<a class="header_call mobile" href="#!">
+				<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<circle cx="20" cy="20" r="19.5" stroke="#1D1D1B"></circle>
+					<path d="M16.7248 11.3969C16.3873 10.5532 15.5702 10 14.6615 10H11.6052C10.4425 10 9.5 10.9423 9.5 12.105C9.5 21.9877 17.5118 29.9995 27.3945 29.9995C28.5572 29.9995 29.4995 29.0569 29.4995 27.8942L29.5 24.8374C29.5 23.9287 28.9469 23.1117 28.1033 22.7743L25.174 21.603C24.4161 21.2998 23.5533 21.4363 22.9263 21.9588L22.1702 22.5893C21.2873 23.3251 19.9882 23.2666 19.1755 22.4539L17.0467 20.3231C16.234 19.5104 16.174 18.2124 16.9097 17.3295L17.5402 16.5735C18.0627 15.9465 18.2003 15.0834 17.8972 14.3255L16.7248 11.3969Z" stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round"></path>
+				</svg>
+			</a>
+			<div class="header_mob-menu">
+				<div class="header_mob-menu__content">
+					<button class="btn-close">
+						<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M24.9999 24.9999L13 13M13 13L1 1M13 13L25 1M13 13L1 25" stroke="#1D1D1B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg>
+					</button>
+					<a href="#!" class="header_logo">Алина Гарибова</a>
+					<nav class="header_nav">
+						<a href="#!">Обо мне</a>
+						<a href="#!">Образование</a>
+						<a href="#!">Виды консультаций</a>
+						<a href="#!">Услуги</a>
+						<a href="#!">Публикации</a>
+						<a href="#!">Контакты</a>
+					</nav>
+					<button class="btn btn__primary" data-modal="request">
+						<div class="btn__text">Запись на консультацию</div>
+						<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M13.385 18.5L18.038 12L13.385 5.5H14.604L19.258 12L14.604 18.5H13.385Z" fill="white"></path>
+							<path d="M7.58789 18.5L12.2419 12L7.58789 5.5H8.80789L13.4619 12L8.80789 18.5H7.58789Z" fill="white"></path>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+		<main>
+			<section class="contacts">
+				<div class="container">
+					<div class="breadcrumbs">
+						<a href="#!">Главная</a>
+						<span class="montserrat">/</span>
+						<a href="#!" class="active">Контакты</a>
+					</div>
+					<div class="contacts_content">
+						<div class="contacts_top">
+							<div class="h1">Контакты</div>
+							<div class="desc">Я работаю онлайн, также возможны личные встречи в приемной в Деловом Центре Москва-Сити</div>
+						</div>
+
+						<div class="contacts_address">
+							<div class="contacts_address__items">
+								<div class="contacts_address__item">
+									<div class="contacts_address__item_icon">
+										<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M11.6666 30C8.61841 30.6862 6.66663 31.7405 6.66663 32.9228C6.66663 34.9905 12.6362 36.6667 20 36.6667C27.3638 36.6667 33.3333 34.9905 33.3333 32.9228C33.3333 31.7405 31.3815 30.6862 28.3333 30" stroke="#1D1D1B" stroke-width="1.5" stroke-linecap="round" />
+											<path d="M24.1667 15C24.1667 17.3012 22.3012 19.1667 20 19.1667C17.6989 19.1667 15.8334 17.3012 15.8334 15C15.8334 12.6988 17.6989 10.8333 20 10.8333C22.3012 10.8333 24.1667 12.6988 24.1667 15Z" stroke="#1D1D1B" stroke-width="1.5" />
+											<path d="M22.0957 29.156C21.5335 29.6973 20.7822 30 20.0004 30C19.2184 30 18.467 29.6973 17.9049 29.156C12.7572 24.168 5.85869 18.5958 9.22289 10.5062C11.0419 6.1322 15.4083 3.33333 20.0004 3.33333C24.5924 3.33333 28.9587 6.13221 30.7777 10.5062C34.1377 18.5857 27.256 24.1852 22.0957 29.156Z" stroke="#1D1D1B" stroke-width="1.5" />
+										</svg>
+									</div>
+
+									<div class="contacts_address__item_text">
+										<span class="title">Адрес</span>
+										<span>Деловой Центр Москва-Сити</span>
+									</div>
+								</div>
+
+								<div class="contacts_address__item">
+									<div class="contacts_address__item_icon">
+										<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M6.29607 19.904C4.71604 17.1488 3.95312 14.8991 3.49311 12.6187C2.81274 9.24598 4.36972 5.95136 6.94901 3.84913C8.03912 2.96065 9.28876 3.26421 9.93337 4.42068L11.3887 7.03153C12.5422 9.10096 13.1189 10.1357 13.0045 11.2327C12.8902 12.3297 12.1123 13.2231 10.5567 15.01L6.29607 19.904ZM6.29607 19.904C9.49422 25.4805 14.5131 30.5022 20.096 33.704M20.096 33.704C22.8512 35.284 25.1009 36.047 27.3814 36.507C30.754 37.1873 34.0487 35.6303 36.1509 33.051C37.0394 31.961 36.7359 30.7113 35.5794 30.0667L32.9685 28.6113C30.899 27.4578 29.8644 26.8812 28.7674 26.9955C27.6704 27.1098 26.7769 27.8877 24.99 29.4433L20.096 33.704Z"
+												stroke="#1D1D1B"
+												stroke-width="1.5"
+												stroke-linejoin="round"
+											/>
+										</svg>
+									</div>
+
+									<div class="contacts_address__item_text">
+										<span class="title">Телефон ассистента</span>
+										<a href="tel:+79060972369"><span class="montserrat">+</span>7 906 097-23-69 </a>
+									</div>
+								</div>
+
+								<div class="contacts_address__item">
+									<div class="contacts_address__item_icon">
+										<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M3.33337 10L14.8551 16.5283C19.1027 18.935 20.8974 18.935 25.145 16.5283L36.6667 10" stroke="#1D1D1B" stroke-width="1.5" stroke-linejoin="round" />
+											<path
+												d="M3.35966 22.4593C3.46861 27.5687 3.52309 30.1232 5.40831 32.0157C7.29351 33.908 9.91726 33.9738 15.1648 34.1057C18.3989 34.187 21.6012 34.187 24.8354 34.1057C30.0829 33.9738 32.7065 33.908 34.5919 32.0157C36.477 30.1232 36.5315 27.5687 36.6404 22.4593C36.6755 20.8165 36.6755 19.1835 36.6404 17.5407C36.5315 12.4314 36.477 9.87683 34.5919 7.98445C32.7065 6.09206 30.0829 6.02615 24.8354 5.8943C21.6012 5.81303 18.3989 5.81303 15.1647 5.89428C9.91726 6.02611 7.29351 6.09203 5.40829 7.98443C3.52307 9.87681 3.46861 12.4314 3.35964 17.5407C3.32461 19.1835 3.32462 20.8165 3.35966 22.4593Z"
+												stroke="#1D1D1B"
+												stroke-width="1.5"
+												stroke-linejoin="round"
+											/>
+										</svg>
+									</div>
+
+									<div class="contacts_address__item_text">
+										<span class="title">Почта</span>
+										<a href="mailto:manager@gmail.com">manager<span class="montserrat">@</span>gmail.com</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="map-wrapper">
+								<div id="map" class="map"></div>
+								<div class="map-wrapper_tab-container">
+									<div class="tab desktop">Очные консультации</div>
+									<div class="tab mobile">Личные встречи</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="request">
+	<div class="container">
+		<div class="request_content">
+			<div class="request_title h1">Оставить заявку на консультацию</div>
+			<div class="request__info">Подберем удобный для вас формат</div>
+
+			<form class="request_form">
+				<div class="request__info-gr desktop"><span class="montserrat">*</span> обязательно для заполнения</div>
+				<div class="request_form__inputs">
+					<div class="request_form__inputs_row">
+						<span>Меня зовут</span>
+						<div class="input-wrapper input-wrapper--name">
+							<input type="text">
+							<div class="placeholder desktop">введите ваше имя <span class="montserrat">*</span></div>
+                            <div class="placeholder mobile">введите ваше имя</div>
+						</div>
+
+						<span class="desktop">и моя проблема заключается в</span>
+                        
+					</div>
+					<div class="request_form__inputs_row">
+                        <span class="mobile">Моя проблема </span>
+						<div class="input-wrapper input-wrapper--text">
+							<textarea></textarea>
+							<div class="placeholder desktop">опишите вашу проблему в 2-3 предложениях</div>
+                            <div class="placeholder mobile">опишите вашу проблему</div>
+						</div>
+
+						<span class="desktop">.</span>
+					</div>
+					<div class="request_form__inputs_row">
+						<span>Пожалуйста, свяжитесь со мной по номеру</span>
+						<div class="input-wrapper input-wrapper--tel">
+							<input type="text" class="input-phone">
+							<div class="placeholder desktop">введите номер телефона <span class="montserrat">*</span></div>
+                            <div class="placeholder mobile">введите номер телефона</div>
+						</div>
+						<span class="desktop">.</span>
+					</div>
+				</div>
+				<button class="btn btn__primary">
+					<span class="btn__text">Записаться на консультацию</span>
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M12.885 18.5L17.538 12L12.885 5.5H14.104L18.758 12L14.104 18.5H12.885Z" fill="white"></path>
+						<path d="M7.08789 18.5L11.7419 12L7.08789 5.5H8.30789L12.9619 12L8.30789 18.5H7.08789Z" fill="white"></path>
+					</svg>
+				</button>
+			</form>
+		</div>
+	</div>
+</section>
+
+		</main>
+		<footer class="footer">
+	<div class="container">
+		<div class="footer_row">
+			<a href="#!" class="footer_logo"> Алина Гарибова </a>
+			<div class="footer_contacts">
+				<a href="tel:89060972369">7 906 097-23-69</a>
+				<a href="mailto:manager@gmail.com">manager<span class="montserrat">@</span>gmail.com</a>
+			</div>
+			<nav class="footer_nav">
+				<a href="#!">Обо мне</a>
+				<a href="#!">Образование</a>
+				<a href="#!">виды консультаций</a>
+				<a href="#!">услуги</a>
+				<a href="#!">Публикации</a>
+				<a href="#!">Контакты</a>
+			</nav>
+			<button class="btn btn__secondary desktop">
+				<span class="btn__text">Запись на консультацию</span>
+				<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M7.08984 19L11.7438 12.5L7.08984 6H8.30984L12.9638 12.5L8.30984 19H7.08984ZM12.8868 19L17.5398 12.5L12.8868 6H14.1058L18.7598 12.5L14.1058 19H12.8868Z" fill="#1D1D1B"></path>
+				</svg>
+			</button>
+		</div>
+		<div class="footer_row">
+			<a href="#!" class="footer_policy-link">Политика конфиденциальности</a>
+			<span>Все права защищены</span>
+		</div>
+	</div>
+</footer>
+
+		<div class="modal modal-request">
+	<div class="modal-back"></div>
+	<div class="modal-wrapper">
+		<button class="modal-exit" data-modal="close-modal">
+			<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M30.9998 30.9998L16 16M16 16L1 1M16 16L31 1M16 16L1 31" stroke="#1D1D1B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+			</svg>
+		</button>
+		<div class="modal-content">
+			<div class="modal_title">Запишитесь <br>на консультацию</div>
+			<form class="modal_form">
+				<div class="modal_form__inputs">
+					<div class="modal_form__input"><input type="text" placeholder="Ваше имя"></div>
+					<div class="modal_form__input"><input type="text" class="input-phone" placeholder="Номер телефона"></div>
+					<div class="modal_form__input"><input type="email" placeholder="E-mail"></div>
+					<div class="modal_form__input"><textarea placeholder="Опишите свою проблему в 2-3 предложениях"></textarea></div>
+				</div>
+
+				<div class="modal_form__checkbox">
+					<label class="input-checkbox">
+						<input type="checkbox">
+					</label>
+					<span>Я согласен на <a href="#!">обработку персональных данных</a></span>
+				</div>
+				<button class="btn btn__primary">
+					<span class="btn__text">Запись на консультацию</span>
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M12.885 18.5L17.538 12L12.885 5.5H14.104L18.758 12L14.104 18.5H12.885Z" fill="white"></path>
+						<path d="M7.08789 18.5L11.7419 12L7.08789 5.5H8.30789L12.9619 12L8.30789 18.5H7.08789Z" fill="white"></path>
+					</svg>
+				</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="modal modal-success">
+	<div class="modal-back"></div>
+	<div class="modal-wrapper">
+		<button class="modal-exit" data-modal="close-modal">
+			<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M30.9998 30.9998L16 16M16 16L1 1M16 16L31 1M16 16L1 31" stroke="#1D1D1B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+			</svg>
+		</button>
+		<div class="modal-content">
+			<div class="modal_title">Вы записаны<br>на консультацию!</div>
+			<div class="modal_desc">Ассистент свяжется с вами в ближайшее время</div>
+			<button class="btn btn__primary" data-modal="close-modal">
+				<span class="btn__text">Вернуться на главную</span>
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M12.885 18.5L17.538 12L12.885 5.5H14.104L18.758 12L14.104 18.5H12.885Z" fill="white"></path>
+					<path d="M7.08789 18.5L11.7419 12L7.08789 5.5H8.30789L12.9619 12L8.30789 18.5H7.08789Z" fill="white"></path>
+				</svg>
+			</button>
+		</div>
+	</div>
+</div>
+
+	</body>
+</html>
